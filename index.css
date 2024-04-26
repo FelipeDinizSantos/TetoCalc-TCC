@@ -1,0 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web' , sans-serif;
+}
+
+.Container{
+    max-width: 1080px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+header{
+    background-color: black;
+    width: 100%;
+    padding: 10px;
+}
+
+.Logo img{
+    width: 70px;
+    height: auto; 
+    cursor: pointer;
+   
+    
+}
+
+.Logo,.Social{
+    width: 25%;
+
+}
+
+.Menu{
+    width: 50%;
+}
+
+.Menu nav a{
+    color: white;
+    text-decoration: none;
+    padding-right: 50px;
+    font-size: 18px;
+    position: relative;
+}
+
+.Menu nav a::after {
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg, #feba35, #fdf27c );
+    position: absolute;
+    top: 28px;
+    left: 0;
+    transition: width 0.5s;
+
+}
+.Menu nav a:hover::after {
+    width: 30px;
+}
+
+.Social button{
+    width: 40px;
+    right: 40px;
+    background-image: linear-gradient(45deg, #feba35, #fdf27c );
+    border: none;
+    margin-right: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+
+   
+}
+.Social button i{
+    font-size: 20px;
+    color: white;
+}
