@@ -9,36 +9,51 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <title>Canaã Imóveis</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Jersey+25+Charted&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+    </style>
 </head>
 
 <body>
-    <div class="image"> 
-        <img src="assets/Img/main_logo_canaa.png" alt="LargeLogoCanaã">
-    </div>
-
-        <p> <a href="anotherteste.page.html">Home</a> para ir para outra pag.</p>
-            <h1>Descubra quanto vale o seu imóvel:</h1>
-
-    <div class="RectangleObjects">
-        <div class="ListBoxes">
-            <p>Tipo do imóvel</p>
-                <form action="">
-                    <select name="" id="">
-                        <option value="teste2">teste2</option>
-                        <option value="teste1">teste1</option>
-                    </select>
-                </form>
-                <p>Pretensão</p>
-                    <form action="">
-                        <select name="" id="">
-                            <option value="teste2">teste2</option>
-                            <option value="teste1">teste1</option>
-                        </select>
-                    </form>
+    <div class="allThings"> <!--Div para tudo -->
+        <div class="image"> 
+            <img src="assets/Img/main_logo_canaa.png" alt="LargeLogoCanaã">
         </div>
+        <!--precisamos arrumar este link abaixo -->
+            <p class="tetocalc"> <a href="anotherteste.page.html">Home</a> > TetoCalc</p>
+                <h1>Descubra Quanto Vale o Seu Imóvel:</h1>
 
-        <button>Avançar</button>
-    </div>
+        <div class="RectangleObjects"> <!--Retângulo com bordas -->
+
+            <a href="https://www.google.com" class="bola-link"> <!--Testes das bolas \o/ -->
+                <div class="bola"></div>
+                <span class="texto">Imóvel</span>
+            </a>
+            
+
+                <div class="ListBoxes"> <!-- Uma div para as opções de lista-->
+                    <p class="options">Tipo do Imóvel *</p>
+                        <form action="">
+                            <select name="typeProperty" id="typeProperty" class="list">
+                                <option value="teste2"></option>
+                                <option value="teste1">teste1</option>
+                            </select>
+                        </form>
+
+                        <p class="options">Pretensão *</p>
+                            <form action="">
+                                <select name="pretension" id="pretension" class="list">
+                                    <option value="teste2"></option>
+                                    <option value="teste1">teste1</option>
+                                </select>
+                            </form>
+                </div>
+                <a href="" >
+                    <button>Avançar</button>
+                </a>
+            </div>
+        </div>
     
 
 
