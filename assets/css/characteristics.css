@@ -1,0 +1,89 @@
+img{
+    margin-top: 20px;
+    height: 75px;
+    
+}
+
+.allThings{
+    margin-left: 20px;
+}
+
+p.tetocalc{
+    font-family: "Red Hat Display", sans-serif;
+    font-style: italic;
+    color: #CCCCCC;
+}
+
+p.options{
+    margin-bottom: 4px;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: bold;
+}
+
+h1{
+    margin-top: 50px;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.ListBoxes{
+    margin-top: 29px;
+    margin-left: 350px;
+}
+
+button{
+    border-radius: 3px;
+    border: none;
+    font-weight: bold;
+    font-family: "Red Hat Display", sans-serif;
+    margin-left: 680px;
+    margin-top: 25px;
+    background-color: #3D3F92;
+    color: white;
+    padding: 10px 45px 10px;
+}
+
+.list{
+    border-radius: 1px;
+    font-family: "Red Hat Display", sans-serif;
+    padding: 5px 230px 5px;
+}
+
+.RectangleObjects{
+    border: 1px solid #dcdbdb; /* Define a borda do retângulo */
+    padding: 20px 0px 135px; /* Adiciona espaço interno ao retângulo */
+    width: 1000px; /* Define a largura do retângulo */
+}
+
+.bola{
+    margin-top: 20px;
+    margin-left: 80px;
+    width: 70px;
+    height: 70px;
+    background-color: #497EDA;
+    border-radius: 50%; /* Faz com que a div tenha forma de círculo */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.texto{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 12px;
+    margin-left: 10px;
+    width: 120px;
+    background-color: #497EDA;
+    color: white;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: bold;
+    padding: 2px 0px 2px;
+
+}
+
+.bola-link {
+    display: inline-block; /* Faz com que o link tenha o tamanho do conteúdo */
+    text-decoration: none; /* Remove sublinhado do link */
+  }
+
+
+
+
