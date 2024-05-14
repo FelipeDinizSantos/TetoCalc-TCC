@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/index.css" /> 
+    <link rel="stylesheet" href="./assets/css/index.css" />
 
     <script src="https://kit.fontawesome.com/76453bfcde.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -17,7 +18,7 @@
 
 <body>
     <div class="allThings"> <!--Div para tudo -->
-        <div class="image"> 
+        <div class="image">
             <img src="assets/Img/main_logo_canaa.png" alt="LargeLogoCanaã">
         </div>
         <!--precisamos arrumar este link abaixo -->
@@ -27,20 +28,17 @@
         <div class="tetocalcParagraphs">
             <p class="tetocalc2">> TetoCalc</p>
         </div>
-    
 
-
-
-                <h1>Descubra Quanto Vale o Seu Imóvel:</h1>
+        <h1>Descubra Quanto Vale o Seu Imóvel:</h1>
 
         <div class="RectangleObjects"> <!--Retângulo com bordas -->
-            
+
+            <div class="allBolls">
                 <a href="https://www.google.com" class="bola-link"> <!--Testes das bolas \o/ -->
-                    <div class="blueBoll"></div>
-                    <span class="texto">Imóvel</span>
+                    <div class="blueBoll">
+                        <span class="circleText">Imóvel</span>
+                    </div>
                 </a>
-                <!--
-                    <div class="allBolls">
                 <div class="wire"></div>
                 <div class="greyBoll"></div>
                 <div class="wire"></div>
@@ -50,36 +48,30 @@
                 <div class="wire"></div>
                 <div class="greyBoll"></div>
             </div>
-            Retângulo com bordas -->
-            
+            <!-- Retângulo com bordas -->
 
+            <div class="ListBoxes"> <!-- Uma div para as opções de lista-->
+                <p class="options">Tipo do Imóvel *</p>
+                <form action="">
+                    <select name="typeProperty" id="typeProperty" class="list">
+                        <option value="teste2"></option>
+                        <option value="teste1">teste1</option>
+                    </select>
+                </form>
 
-
-
-                <div class="ListBoxes"> <!-- Uma div para as opções de lista-->
-                    <p class="options">Tipo do Imóvel *</p>
-                        <form action="">
-                            <select name="typeProperty" id="typeProperty" class="list">
-                                <option value="teste2"></option>
-                                <option value="teste1">teste1</option>
-                            </select>
-                        </form>
-
-                        <p class="options">Pretensão *</p>
-                            <form action="">
-                                <select name="pretension" id="pretension" class="list">
-                                    <option value="teste2"></option>
-                                    <option value="teste1">teste1</option>
-                                </select>
-                            </form>
-                                <a href="" >
-                                    <button>Avançar</button>
-                                </a>
-                </div>
-                
+                <p class="options">Pretensão *</p>
+                <form action="">
+                    <select name="pretension" id="pretension" class="list">
+                        <option value="teste2"></option>
+                        <option value="teste1">teste1</option>
+                    </select>
+                </form>
+                <a href="">
+                    <button>Avançar</button>
+                </a>
             </div>
+
         </div>
-    
+    </div>
 </body>
 </html>
-

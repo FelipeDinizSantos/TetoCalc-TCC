@@ -1,7 +1,6 @@
 img{
     margin-top: 8px;
     height: 64px;
-    
 }
 
 .allThings{
@@ -10,8 +9,8 @@ img{
 
 .tetocalcParagraphs {
     display: inline-block;
-    
 }
+
 p.tetocalc1{
     margin-top: 29px;
     font-family: "Red Hat Display", sans-serif;
@@ -27,7 +26,6 @@ p.tetocalc2{
     font-size: 13px;
     color: #9c9c9c;
     text-decoration: none;
-
 }
 
 p.options{
@@ -43,9 +41,12 @@ h1{
 }
 
 .ListBoxes{
-    margin-top: 29px;
-    margin-left: 450px;
-    
+    position: absolute;
+    right: 0;
+    margin-right: 6rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
 }
 
 button{
@@ -67,30 +68,23 @@ button{
 }
 
 .RectangleObjects{
+    position: relative;
+    display: flex;
+    flex-direction: row;
     border: 1px solid #dcdbdb; /* Define a borda do retângulo */
-    padding: 20px 0px 135px; /* Adiciona espaço interno ao retângulo */
-    width: 1170px; /* Define a largura do retângulo */
+    padding: 30px 50px;
+    width: 80% /* Define a largura do retângulo */
 }
 
-/*.allBolls{
-    background-color: red;
-    width: 200px;
-
-}*/
 
 .blueBoll{
-    margin-top: 20px;
-    margin-left: 80px;
     width: 50px;
     height: 50px;
     background-color: #497EDA;
     border-radius: 50%; /* Faz com que a div tenha forma de círculo */
-    display: inline-block;
-    vertical-align: middle;
 }
 
 .greyBoll{
-    margin-left: 80px;
     width: 50px;
     height: 50px;
     background-color: #D9D9D9;
@@ -98,32 +92,27 @@ button{
 }
 
 .wire{
-    margin-left: 104px;
+    margin-left: 24.2px;
     width: 2px;
     height: 50px;
     background-color: #D9D9D9;
 }
 
 
-.texto{
+.circleText{
     display: inline-block;
     vertical-align: middle;
     margin-top: 12px;
-    margin-left: 10px;
+    margin-left: 65px;
     width: 120px;
     background-color: #497EDA;
     color: white;
     font-family: "Red Hat Display", sans-serif;
     font-weight: bold;
-    padding: 2px 0px 2px;
-
+    padding: 2px 4px; 
 }
 
 .bola-link {
     display: inline-block; /* Faz com que o link tenha o tamanho do conteúdo */
     text-decoration: none; /* Remove sublinhado do link */
   }
-
-
-
-
