@@ -1,17 +1,33 @@
 img{
-    margin-top: 20px;
-    height: 75px;
+    margin-top: 8px;
+    height: 64px;
     
 }
 
 .allThings{
-    margin-left: 20px;
+    margin-left: 119px;
 }
 
-p.tetocalc{
+.tetocalcParagraphs {
+    display: inline-block;
+    
+}
+p.tetocalc1{
+    margin-top: 29px;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 13px;
+    color: #858584;
+    text-decoration: none;
+}
+
+p.tetocalc2{
+    margin-top: 29px;   
     font-family: "Red Hat Display", sans-serif;
     font-style: italic;
-    color: #CCCCCC;
+    font-size: 13px;
+    color: #9c9c9c;
+    text-decoration: none;
+
 }
 
 p.options{
@@ -21,13 +37,15 @@ p.options{
 }
 
 h1{
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 5px;
     font-family: "Red Hat Display", sans-serif;
 }
 
 .ListBoxes{
     margin-top: 29px;
-    margin-left: 350px;
+    margin-left: 450px;
+    
 }
 
 button{
@@ -35,7 +53,7 @@ button{
     border: none;
     font-weight: bold;
     font-family: "Red Hat Display", sans-serif;
-    margin-left: 680px;
+    margin-left: 383px;
     margin-top: 25px;
     background-color: #3D3F92;
     color: white;
@@ -51,19 +69,41 @@ button{
 .RectangleObjects{
     border: 1px solid #dcdbdb; /* Define a borda do retângulo */
     padding: 20px 0px 135px; /* Adiciona espaço interno ao retângulo */
-    width: 1000px; /* Define a largura do retângulo */
+    width: 1170px; /* Define a largura do retângulo */
 }
 
-.bola{
+/*.allBolls{
+    background-color: red;
+    width: 200px;
+
+}*/
+
+.blueBoll{
     margin-top: 20px;
     margin-left: 80px;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     background-color: #497EDA;
     border-radius: 50%; /* Faz com que a div tenha forma de círculo */
     display: inline-block;
     vertical-align: middle;
 }
+
+.greyBoll{
+    margin-left: 80px;
+    width: 50px;
+    height: 50px;
+    background-color: #D9D9D9;
+    border-radius: 50%; /* Faz com que a div tenha forma de círculo */
+}
+
+.wire{
+    margin-left: 104px;
+    width: 2px;
+    height: 50px;
+    background-color: #D9D9D9;
+}
+
 
 .texto{
     display: inline-block;
