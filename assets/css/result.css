@@ -3,6 +3,14 @@ img{
     height: 64px;
 }
 
+.icon{
+    margin-top: 18%;
+    height: 4%;
+    width: 3.5%;
+    position: absolute;
+    right: 1;
+}
+
 .allThings{
     margin-left: 119px;
 }
@@ -33,14 +41,37 @@ h1{
     margin-bottom: 5px;
     font-family: "Red Hat Display", sans-serif;
 }
-
+.allInformations{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #dcdbdb; /* Define a borda do retângulo */
+    width: 50%;/* Define a largura do retângulo */
+    margin-left: 25%;
+}
 p.salesProjection{
+    font-size: larger;
     font-family: "Red Hat Display", sans-serif;
-    margin-left: 250px;
-    background-color: red;
+    font-weight: 450;
 }
 
-.threeButtons{
+p.textImmobile{
+    font-size: larger;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 450;
+    margin-top: 25%;
+    position: absolute;
+    right: 1;
+}
+
+h1.value{
+    margin-top: 10%;
+    position: absolute;
+    right: 1;
+}
+
+
+/*.threeButtons{
     display: flex;
     background-color: red;
     width: 10px;
@@ -79,7 +110,7 @@ button.whiteButton{
     background-color: white;
     color: black;
     padding: 8px 49px 8px;
-}
+}*/
 
 .RectangleObjects{
     position: relative;
@@ -89,8 +120,6 @@ button.whiteButton{
     padding: 30px 50px;
     width: 80% /* Define a largura do retângulo */
 }
-
-
 
 .blueBoll{
     width: 50px;
@@ -119,7 +148,6 @@ button.whiteButton{
     height: 50px;
     background-color: #497EDA;
 }
-
 
 .circleText{
     display: inline-block;
