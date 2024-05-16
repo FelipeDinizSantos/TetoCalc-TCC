@@ -4,11 +4,11 @@ img{
 }
 
 .icon{
-    margin-top: 18%;
-    height: 4%;
-    width: 3.5%;
-    position: absolute;
-    right: 1;
+    width: 15px;
+    height: auto;
+    margin-right: 1px;
+    
+    
 }
 
 .allThings{
@@ -50,15 +50,16 @@ h1{
     margin-left: 25%;
 }
 p.salesProjection{
-    font-size: larger;
+    font-size: 25px;
     font-family: "Red Hat Display", sans-serif;
-    font-weight: 450;
+    font-weight: 400;
+    margin-top: 0.5px;
 }
 
 p.textImmobile{
-    font-size: larger;
+    font-size: 25px;
     font-family: "Red Hat Display", sans-serif;
-    font-weight: 450;
+    font-weight: 400;
     margin-top: 25%;
     position: absolute;
     right: 1;
@@ -70,6 +71,18 @@ h1.value{
     right: 1;
 }
 
+p.valueM²{
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.icontext{
+    margin-top: 14%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 1;
+}
 
 /*.threeButtons{
     display: flex;
