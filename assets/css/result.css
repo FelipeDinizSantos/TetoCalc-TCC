@@ -34,47 +34,16 @@ h1{
     font-family: "Red Hat Display", sans-serif;
 }
 
-p.options{
-    margin-bottom: 4px;
-    font-family: "Red Hat Display", sans-serif;
-    font-weight: bold;
-}
-
-.ListBoxes{
-    position: absolute;
-    right: 1;
-    margin-left: 400px;
-    margin-top: 50px;
-    height: 200px;
-}
-
-input[type="text"] {
-    color: #333;
-    border: 1px solid black;
-    border-radius: 1px;
-    padding: 8px;
-    margin-bottom: 10px;
-    font-size: 14px;
-    font-family: "Red Hat Display", sans-serif;
-    width: 600px;
-}
-
-/*.list{
-    border-radius: 1px;
-    font-family: "Red Hat Display", sans-serif;
-    padding: 5px 230px 5px;
-}*/
-
-.twoButtons{
+.threeButtons{
     display: flex;
-    margin-left: 349px;
+    background-color: red;
+    margin-left: 350px;
     width: 10px;
     height: 10px;
-    margin-top: 340px;
-    
+    margin-top: 400px;
    }
 
-button.blueButton{
+button.blueButtonSave{
     border-radius: 3px;
     border: none;
     font-weight: bold;
@@ -82,10 +51,22 @@ button.blueButton{
     background-color: #3D3F92;
     color: white;
     padding: 10px 45px 10px;
+    margin-right: 100px;
+}
+
+button.blueButtonGenerate{
+    border-radius: 3px;
+    border: none;
+    font-weight: bold;
+    font-family: "Red Hat Display", sans-serif;
+    background-color: #3D3F92;
+    color: white;
+    height: 38px;
+    width: 140px;
 }
 
 button.whiteButton{
-    margin-right: 340px;
+    margin-right: 100px;
     border-radius: 3px;
     border-width: 1px;
     font-weight: bold;
