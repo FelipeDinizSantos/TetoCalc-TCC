@@ -34,10 +34,15 @@ h1{
     font-family: "Red Hat Display", sans-serif;
 }
 
+p.salesProjection{
+    font-family: "Red Hat Display", sans-serif;
+    margin-left: 250px;
+    background-color: red;
+}
+
 .threeButtons{
     display: flex;
     background-color: red;
-    margin-left: 350px;
     width: 10px;
     height: 10px;
     margin-top: 400px;
