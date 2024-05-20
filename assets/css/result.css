@@ -4,9 +4,10 @@ img{
 }
 
 .icon{
-    width: 15px;
+    width: 16px;
     height: auto;
-    margin-right: 1px;
+    margin-top: 1px;
+    margin-right: 7px;
     
     
 }
@@ -45,8 +46,8 @@ h1{
     position: relative;
     display: flex;
     flex-direction: row;
-    border: 1px solid #dcdbdb; /* Define a borda do retângulo */
-    width: 50%;/* Define a largura do retângulo */
+    width: 60%;/* Define a largura do retângulo */
+    
     margin-left: 25%;
 }
 p.salesProjection{
@@ -60,23 +61,72 @@ p.textImmobile{
     font-size: 25px;
     font-family: "Red Hat Display", sans-serif;
     font-weight: 400;
-    margin-top: 25%;
+    margin-top: 19%;
     position: absolute;
     right: 1;
 }
 
 h1.value{
-    margin-top: 10%;
+    margin-top: 8%;
     position: absolute;
     right: 1;
 }
 
 p.valueM²{
+    
     font-family: "Red Hat Display", sans-serif;
 }
 
+.smallSquare1{
+    right: 1;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #dcdbdb; /* Define a borda do retângulo */
+    border-radius: 2px;
+    height: 35%;
+    width: 45%; /* Define a largura do retângulo */
+    margin-top: 27%;
+}
+
+.smallSquare2{
+    right: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #dcdbdb; /* Define a borda do retângulo */
+    border-radius: 2px;
+    height: 35%;
+    width: 45%; /* Define a largura do retângulo */
+    margin-top: 27%;
+}
+
+.InformationsSmallSquare{
+    border-radius: 2px;
+    margin-left: 10px;
+    width: 130%;
+}
+
+.cityStateSmallSquare{
+    color: grey;
+    font-weight: bold;
+    margin-top: 6px;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.typeNeighborhoodSmallSquare{
+    font-weight: 600;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.detailsSmallSquare{
+    margin-top: -5%;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 12px;
+}
+
 .icontext{
-    margin-top: 14%;
+    margin-top: 11%;
     text-align: center;
     display: flex;
     align-items: center;
@@ -84,12 +134,50 @@ p.valueM²{
     right: 1;
 }
 
-/*.threeButtons{
+.icontextSmallSquare{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 1;
+    margin-top: -6%;
+}
+
+.valueM²SmallSquare{
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 12px;
+    font-weight: 520;
+
+}
+
+.valueSmallSquare{
+    margin-top: -3%;
+}
+
+.iconLocalizationSmallSquare p{
+    text-decoration: underline;
+    font-size: 15px;
+    
+}
+
+.iconLocalizationSmallSquare{
+    margin-top: 51%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 1;
+    
+}
+
+.threeButtons{
     display: flex;
     background-color: red;
     width: 10px;
     height: 10px;
     margin-top: 400px;
+    position: absolute;
+    right: 1;
    }
 
 button.blueButtonSave{
@@ -123,7 +211,7 @@ button.whiteButton{
     background-color: white;
     color: black;
     padding: 8px 49px 8px;
-}*/
+}
 
 .RectangleObjects{
     position: relative;
