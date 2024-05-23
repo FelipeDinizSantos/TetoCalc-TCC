@@ -1,124 +1,178 @@
-img{
-    margin-top: 8px;
-    height: 64px;
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25+Charted&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Reset das estilizações padrões */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: 0px;
 }
 
-.allThings{
-    margin-left: 119px;
-}
-
-.tetocalcParagraphs {
-    display: inline-block;
-}
-
-p.tetocalc1{
-    margin-top: 29px;
+body{
+    width: 100%;
     font-family: "Red Hat Display", sans-serif;
-    font-size: 13px;
-    color: #858584;
-    text-decoration: none;
+    /* height: ; */
 }
 
-p.tetocalc2{
-    margin-top: 29px;   
-    font-family: "Red Hat Display", sans-serif;
-    font-style: italic;
-    font-size: 13px;
-    color: #9c9c9c;
-    text-decoration: none;
-}
 
-p.options{
-    margin-bottom: 4px;
-    font-family: "Red Hat Display", sans-serif;
-    font-weight: bold;
-}
-
-h1{
-    margin-top: 20px;
-    margin-bottom: 5px;
-    font-family: "Red Hat Display", sans-serif;
-}
-
-.ListBoxes{
-    position: absolute;
-    right: 0;
-    margin-right: 6rem;
+/* Cabeçalho */
+.header{
+    width: 100%;
+    height: 20vh;
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    justify-content: space-around;
+    padding: 0px 0px 0px 15vw;
 }
 
-.tt{
-    background-color: red;
-    margin-left: 376px;
-    width: 10px;
-    height: 10px;
-    margin-top: 20px;
-   }
-
-   button{
-    border-radius: 3px;
-    border: none;
-    font-weight: bold;
-    font-family: "Red Hat Display", sans-serif;
-    background-color: #3D3F92;
-    color: white;
-    padding: 10px 45px 10px;
+.header img{
+    width: 20vw;
 }
 
-.list{
-    border-radius: 1px;
-    font-family: "Red Hat Display", sans-serif;
-    padding: 5px 230px 5px;
-}
-
-.RectangleObjects{
-    position: relative;
+.header span{
     display: flex;
-    flex-direction: row;
-    border: 1px solid #dcdbdb; /* Define a borda do retângulo */
-    padding: 30px 50px;
-    width: 80% /* Define a largura do retângulo */
+    gap: 5px;
+}
+
+.header span a{
+    text-decoration: none;
+    color: #151515;
+}
+
+.header span p{
+    font-style: italic;
+    color: #aaa;
 }
 
 
-.blueBoll{
-    width: 50px;
-    height: 50px;
+/* Conteúdo principal */
+.main-containt{
+    width: 100%;
+    height: 80vh;
+    padding: 0px 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.main-containt h1{
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.register-property{
+    width: 40vh;
+    height: 100%;
+}
+
+.register-property p{
     background-color: #497EDA;
-    border-radius: 50%; /* Faz com que a div tenha forma de círculo */
+    position: absolute;
+    top: 25px;
+    right: 5px;
+    padding: 1px 50px 1px 5px;
+    color: #fff;
+    font-weight: 600;
 }
 
-.greyBoll{
-    width: 50px;
-    height: 50px;
+.retangle{
+    width: 100%;
+    height: 70%;
+    border: 1px solid #eee;
+    display: flex;
+    padding-right: 3vw;
+}
+
+.progress-bar{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.progress-bar .blue-ball{
+    width: 40px;
+    height: 40px;
+    background-color: #497EDA;
+    border-radius: 50%;
+}
+
+.progress-bar .grey-ball{
+    width: 40px;
+    height: 40px;
     background-color: #D9D9D9;
-    border-radius: 50%; /* Faz com que a div tenha forma de círculo */
+    border-radius: 50%;
 }
 
-.wire{
-    margin-left: 24.2px;
+.progress-bar .line{
     width: 2px;
-    height: 50px;
     background-color: #D9D9D9;
+    position: absolute;
+    z-index: -1;
 }
 
+.progress-bar #grey-line{
+    height: 73.8%;
+    bottom: 25px;
+}
 
-.circleText{
-    display: inline-block;
-    vertical-align: middle;
-    margin-top: 12px;
-    margin-left: 65px;
-    width: 120px;
+.progress-bar #blue-line{
     background-color: #497EDA;
-    color: white;
-    font-family: "Red Hat Display", sans-serif;
-    font-weight: bold;
-    padding: 2px 4px; 
+    height: 14%;
+    top: 25px;
 }
 
-.bola-link {
-    display: inline-block; /* Faz com que o link tenha o tamanho do conteúdo */
-    text-decoration: none; /* Remove sublinhado do link */
-  }
+.property-information{
+    width: 73%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.property-information form{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding: 0px 3vw 0px 10px;
+    gap: 20px;
+}
+
+.property-information div{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.property-information form label{
+    font-weight: bold;
+}
+
+.property-information form input{
+    width: 100%;
+    height: 5vh;
+    outline: 0px;
+    border: 1px solid black;
+    padding: 0px 10px;
+}
+
+.property-information form button a{
+    color: #fff;
+    font-family: "Red Hat Display", sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    background-color: #3D3F92;
+    padding: 8px 40px;
+    border-radius: 3px;
+}
+

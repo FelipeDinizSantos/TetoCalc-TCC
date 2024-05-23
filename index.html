@@ -1,78 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/index.css" />
-
-    <script src="https://kit.fontawesome.com/76453bfcde.js" crossorigin="anonymous"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <!-- Link Css -->
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <!-- Link para o mobile -->
+    <link rel="stylesheet" href="./assets/css/mobile/index-mobile.css" media="screen and (max-width: 500px)">
     <title>Canaã Imóveis</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Jersey+25+Charted&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
-    </style>
 </head>
-
 <body>
-    <div class="allThings"> <!--Div para tudo -->
-        <div class="image">
-            <img src="assets/Img/main_logo_canaa.png" alt="LargeLogoCanaã">
-        </div>
-        <!--precisamos arrumar este link abaixo -->
-        <div class="tetocalcParagraphs">
-            <p class="tetocalc1"> <a href="anotherteste.page.html">Home</a> </p>
-        </div>
-        <div class="tetocalcParagraphs">
-            <p class="tetocalc2">> TetoCalc</p>
-        </div>
+    <!-- Cabecalho -->
+    <header class="header">
+        <img src="./assets/Img/main_logo_canaa.png" alt="Logo canaã">
+        <span><a href="#">Home</a>><p>TetoCal</p></span>
+    </header>
 
-        <h1>Descubra Quanto Vale o Seu Imóvel:</h1>
-
-        <div class="RectangleObjects"> <!--Retângulo com bordas -->
-
-            <div class="allBolls">
-                <a href="./index.html" class="bola-link"> <!--Testes das bolas \o/ -->
-                    <div class="blueBoll">
-                        <span class="circleText">Imóvel</span>
+    
+    <!-- Conteúdo Principal -->
+    <main class="main-containt">
+        <h1>Descubra Quanto Vale o Seu Imóvel</h1>
+        <div class="retangle">
+            <div class="register-property">
+                <div class="progress-bar">
+                    <p>Imóvel</p>
+                    <a href="./index.html"><div class="blue-ball"></div></a>
+                    <div class="grey-ball"></div>
+                    <div class="grey-ball"></div>
+                    <div class="grey-ball"></div>
+                    <div class="grey-ball"></div>
+                    <div class="line" id="blue-line"></div>
+                    <div class="line" id="grey-line"></div>
+                </div>
+            </div>
+            <div class="property-information">
+                <form action="">
+                    <div>
+                        <label for="first-input">Tipo do Imovél *</label>
+                        <input list="property-type" id="first-input">
                     </div>
-                </a>
-                <div class="wire"></div>
-                <div class="greyBoll"></div>
-                <div class="wire"></div>
-                <div class="greyBoll"></div>
-                <div class="wire"></div>
-                <div class="greyBoll"></div>
-                <div class="wire"></div>
-                <div class="greyBoll"></div>
-            </div>
-            <!-- Retângulo com bordas -->
+                    <datalist id="property-type">
+                        <option value="Teste"></option>
+                    </datalist>
 
-            <div class="ListBoxes"> <!-- Uma div para as opções de lista-->
-                <p class="options">Tipo do Imóvel *</p>
-                <form action="">
-                    <select name="typeProperty" id="typeProperty" class="list">
-                        <option value="teste2"></option>
-                        <option value="teste1">teste1</option>
-                    </select>
+                    <div>
+                    <label for="secont-input">Pretenção *</label>
+                    <input list="intention" id="secont-input">
+                    </div>
+
+                    <datalist id="intention">
+                        <option value="Teste"></option>
+                    </datalist>
+                    <button><a href="./pages/address.html">Avançar</a></button>
                 </form>
-
-                <p class="options">Pretensão *</p>
-                <form action="">
-                    <select name="pretension" id="pretension" class="list">
-                        <option value="teste2"></option>
-                        <option value="teste1">teste1</option>
-                    </select>
-                </form>
-                <div class="tt">
-                    <a href="../TetoCalc-TCC/pages/address.html">
-                        <button>Avançar</button>
-                    </a>
             </div>
-
         </div>
-    </div>
+    </main>
+
+
+    <!-- Biblioteca de fonte -->
+    <script src="https://kit.fontawesome.com/76453bfcde.js" crossorigin="anonymous"></script>
 </body>
 </html>

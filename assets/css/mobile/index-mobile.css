@@ -1,0 +1,70 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25+Charted&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Reset das estilizações padrões */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: 0px;
+}
+
+body{
+    width: 100%;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+
+/* Cabeçalho */
+.header{
+    height: 10vh;
+    padding: 0px 15px;
+}
+
+.header img{
+    width: 45vw;
+}
+
+.header span{
+    display: none;
+}
+
+
+/* Conteúdo principal */
+.main-containt{
+    /* background-color: #ccc; */
+    padding: 5px 10px;
+    justify-content: start;
+}
+
+.register-property{
+    /* background-color: #aaa; */
+    width: 25vw;
+}
+
+.register-property p{
+    background-color: transparent;
+    color: #151515;
+    font-size: 2rem;
+    transform: translateX(113%);
+    font-weight: 400;
+}
+
+.progress-bar{
+    padding-left: 10px;
+}
+
+.progress-bar .blue-ball{
+    width: 30px;
+    height: 30px;
+}
+
+.progress-bar .grey-ball{
+    width: 30px;
+    height: 30px;
+}
+
+.property-information{
+
+}
