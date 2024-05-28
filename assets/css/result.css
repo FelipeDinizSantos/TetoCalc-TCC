@@ -177,6 +177,14 @@ body{
     height: 100%;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;/**/
+}
+
+.property-information .second-informations{
+    display: flex;
+    
 }
 
 .button-container{
@@ -185,6 +193,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .button-container button a{
