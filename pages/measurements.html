@@ -1,88 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/measurements.css" />
-
-    <script src="https://kit.fontawesome.com/76453bfcde.js" crossorigin="anonymous"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <!-- Link Css -->
+    <link rel="stylesheet" href="../assets/css/measurements.css">
+    <!-- Link para o mobile -->
+    <link rel="stylesheet" href="../assets/css/mobile/measurements-mobile.css" media="screen and (max-width: 500px)">
     <title>Canaã Imóveis</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Jersey+25+Charted&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
-    </style>
 </head>
-
 <body>
-    <div class="allThings"> <!--Div para tudo -->
-        <div class="image">
-            <img src="../assets/Img/main_logo_canaa.png" alt="LargeLogoCanaã">
-        </div>
-        <!--precisamos arrumar este link abaixo -->
-        <div class="tetocalcParagraphs">
-            <p class="tetocalc1"> <a href="anotherteste.page.html">Home</a> </p>
-        </div>
-        <div class="tetocalcParagraphs">
-            <p class="tetocalc2">> TetoCalc</p>
-        </div>
+    <!-- Cabecalho -->
+    <header class="header">
+        <img src="../assets/Img/main_logo_canaa.png" alt="Logo canaã">
+        <span><a href="#">Home</a>><p>TetoCal</p></span>
+    </header>
 
+    
+    <!-- Conteúdo Principal -->
+    <main class="main-containt">
         <h1>Descubra Quanto Vale o Seu Imóvel:</h1>
-
-        <div class="RectangleObjects"> <!--Retângulo com bordas -->
-
-            <div class="allBolls">
-                <a href="../index.html" class="bola-link"> <!--Testes das bolas \o/ -->
-                    <div class="blueBoll">
-                        <span class="circleText">Imóvel</span>
+        <div class="retangle">
+            <div class="register-property">
+                <div class="progress-bar">
+                    <p>Imóvel</p>
+                    <p class="p-address">Endereço</p>
+                    <p class="p-characteristics">Características</p>
+                    <p class="p-measurements">Medidas</p>
+                    <a href="../index.html"><div class="blue-ball"></div></a>
+                    <a href="../pages/address.html"><div class="blue-ball"></div></a>
+                    <a href="../pages/characteristics.html"><div class="blue-ball"></div></a>
+                    <a href="../pages/measurements.html"><div class="blue-ball"></div></a>
+                    <div class="grey-ball"></div>
+                    <div class="line" id="blue-line"></div>
+                    <div class="line" id="grey-line"></div>
+                </div>
+            </div>
+            <div class="property-information">
+                <form action="">
+                    <div class="input-container">
+                        <label for="first-input">Área Útil (m²) *</label>
+                        <input type="intention-1" id="first-input">
                     </div>
-                </a>
-                <div class="blueWire"></div>
-                <div class="blueBoll">
-                    <a href="../pages/address.html" class="bola-link">
-                    <span class="circleText">Endereço</span>
-                    </a>
-                </div>
-                <div class="blueWire"></div>
-                <div class="blueBoll">
-                    <a href="../pages/characteristics.html" class="bola-link">
-                        <span class="circleText">Características</span>
-                        </a>
-                </div>
-                <div class="blueWire"></div>
-                <div class="blueBoll">
-                    <a href="../pages/measurements.html" class="bola-link">
-                        <span class="circleText">Medidas</span>
-                        </a>
-                </div>
-                <div class="greyWire"></div>
-                <div class="greyBoll"></div>
-            </div>
-        
 
-            <div class="ListBoxes"> <!--div para as caixas de lista-->
-                <p class="options">Área Útil (m²) *</p>
-                    <input type="text" name="nome" id="nome">
-
-                    <p class="options">Área Contruída (m²) *</p>
-                        <input type="text" name="nome" id="nome">
+                    <div class="input-container">
+                        <label for="second-input">Área Construída (m²) </label>
+                        <input type="intention-2" id="second-input">
+                    </div>
                     
-                    <p class="options">Área Total (m²) *</p>
-                        <input type="text" name="nome" id="nome">
+                    <div class="input-container">
+                        <label for="third-input">Área Total (m²) </label>
+                        <input type="intention-3" id="third-input">
+                    </div>
+                    
 
+
+                    <div class="button-container">
+                        <a href="../pages/characteristics.html">Voltar</a>
+                        <button><a href="../pages/result.html">Avançar</a></button>
+                        
+                    </div>
+                </form>
             </div>
-            <div class="twoButtons">
-                <a href="../pages/characteristics.html">
-                    <button class="whiteButton">Voltar</button>
-                </a>
+        </div>
+    </main>
 
-                <a href="../pages/result.html">
-                    <button class="blueButton">Avançar</button>
-                </a>
 
-            </div>
-    </div>
+    <!-- Biblioteca de fonte -->
+    <script src="https://kit.fontawesome.com/76453bfcde.js" crossorigin="anonymous"></script>
 </body>
 </html>
+
+

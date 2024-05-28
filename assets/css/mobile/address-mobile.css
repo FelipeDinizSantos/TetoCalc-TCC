@@ -45,13 +45,19 @@ body{
 
 .register-property p{
     background-color: transparent;
+    color: transparent;
+}
+
+.register-property p.p-address{
+    background-color: transparent;
     color: #151515;
     left: 0%;
+    top: 5%;
     font-size: 2rem;
     transform: translateX(113%);
     font-weight: 400;
-    top: 1%;
 }
+
 
 .progress-bar{
     padding-left: 10px;
@@ -67,8 +73,12 @@ body{
     height: 30px;
 }
 
-.property-information form button a{
-    top: 100%;
-    padding: 8px 40px;
+.button-container{
+    width: 300px;
+    position: absolute;  
+    bottom: 0; 
     
+    
+    
+
 }

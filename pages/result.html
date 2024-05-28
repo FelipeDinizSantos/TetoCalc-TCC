@@ -1,128 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/result.css" />
-
-    <script src="https://kit.fontawesome.com/76453bfcde.js" crossorigin="anonymous"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <!-- Link Css -->
+    <link rel="stylesheet" href="../assets/css/result.css">
+    <!-- Link para o mobile -->
+    <link rel="stylesheet" href="../assets/css/mobile/result-mobile.css" media="screen and (max-width: 500px)">
     <title>Canaã Imóveis</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Jersey+25+Charted&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
-    </style>
 </head>
-
 <body>
-    <div class="allThings"> <!--Div para tudo começa aqui-->
-        <div class="image">
-            <img src="../assets/Img/main_logo_canaa.png" alt="LargeLogoCanaã">
-        </div>
-        <!--precisamos arrumar este link abaixo -->
-        <div class="tetocalcParagraphs">
-            <p class="tetocalc1"> <a href="anotherteste.page.html">Home</a> </p>
-        </div>
-        <div class="tetocalcParagraphs">
-            <p class="tetocalc2">> TetoCalc</p>
-        </div>
-
+    <!-- Cabecalho -->
+    <header class="header">
+        <img src="../assets/Img/main_logo_canaa.png" alt="Logo canaã">
+        <span><a href="#">Home</a>><p>TetoCal</p></span>
+    </header>
+    
+    
+    <!-- Conteúdo Principal -->
+    <main class="main-containt">
         <h1>Descubra Quanto Vale o Seu Imóvel:</h1>
-
-        <div class="RectangleObjects"> <!--Retângulo com bordas -->
-
-            <!--Bolas começam aqui -->
-            <div class="allBolls">
-                <a href="../index.html" class="bola-link"> 
-                    <div class="blueBoll">
-                        <span class="circleText">Imóvel</span>
-                    </div>
-                </a>
-                <div class="blueWire"></div>
-                <div class="blueBoll">
-                    <a href="../pages/address.html" class="bola-link">
-                    <span class="circleText">Endereço</span>
-                    </a>
-                </div>
-                <div class="blueWire"></div>
-                <div class="blueBoll">
-                    <a href="../pages/characteristics.html" class="bola-link">
-                        <span class="circleText">Características</span>
-                        </a>
-                </div>
-                <div class="blueWire"></div>
-                <div class="blueBoll">
-                    <a href="../pages/measurements.html" class="bola-link">
-                        <span class="circleText">Medidas</span>
-                        </a>
-                </div>
-                <div class="blueWire"></div>
-                <div class="blueBoll">
-                    <a href="../pages/result.html" class="bola-link">
-                        <span class="circleText">Resultado</span>
-                        </a>
+        <div class="retangle">
+            <div class="register-property">
+                <div class="progress-bar">
+                    <p>Imóvel</p>
+                    <p class="p-address">Endereço</p>
+                    <p class="p-characteristics">Características</p>
+                    <p class="p-measurements">Medidas</p>
+                    <p class="p-result">Resultado</p>
+                    <a href="../index.html"><div class="blue-ball"></div></a>
+                    <a href="../pages/address.html"><div class="blue-ball"></div></a>
+                    <a href="../pages/characteristics.html"><div class="blue-ball"></div></a>
+                    <a href="../pages/measurements.html"><div class="blue-ball"></div></a>
+                    <a href="../pages/result.html"><div class="blue-ball"></div></a>
+                    <div class="line" id="blue-line"></div>
+                    <div class="line" id="grey-line"></div>
                 </div>
             </div>
-           <!--Bolas terminam aqui -->
-            <div class="allInformations"> <!--Informações de projeção de vendas começam aqui-->
-                <p class="salesProjection">Projeção de Venda</p>
-                <h1 class="value">R$ 300.000 a 320.000</h1>
-                <div class="icontext">
-                    <img src="../assets/Img/information.png" alt="Ícone" class="icon">
-                    <p class="valueM²">Valor por Metro Quadrado: <b>R$ 3.200</b></p> 
+            <div class="property-information">
+                
+                <div class="first-informations">
+                    <p class="sales-projection">Projeção de Venda</p>
+                    <p class="value">R$ 300.000 a R$ 320.000</p>
+                    <span><img src="" alt=""> <p class="icon-value">Valor por Metro Quadrado <b>R$ 3.200</b></p></span>
+                   <p class="title-simulation">Imóveis Usados no Estudo</p>
                 </div>
-                <p class="textImmobile">Imóveis Usados no Estudo</p>
-
-                <div class="smallSquare1">
-                    <div class="InformationsSmallSquare">
-                        <p class="cityStateSmallSquare">São Paulo - SP</p>
-                        <p class="typeNeighborhoodSmallSquare">Sobrado - Jardim Maria Rosa</p>
-                        <p class="detailsSmallSquare">10 0m²  &#8226;  2 Quartos  &#8226;  1 Banheiro  &#8226;  3 Vagas</p>
-                        <h1 class="valueSmallSquare">R$ 293.000</h1>
-                            <div class="icontextSmallSquare">
-                                <img src="../assets/Img/information.png" alt="Ícone" class="icon">
-                                <p class="valueM²SmallSquare">Valor por Metro Quadrado: <b>R$ 3.200</b></p> 
-                            </div>
+                
+                <div class="second-informations">
+                    <div class="simulation-result-1">
+                        <p class="city-estate">São Paulo - SP</p>
+                        <p class="type-neighborhood">Sobrado - Jardim Maria Rosa</p>
+                        <p class="property-details">100m² . 2 Quartos . 1 Banheiro . 3 Vagas </p>
+                        <h1 class="simulation-value">R$ 293.000</h1>
+                        <span><img src="" alt=""> <p class="icon-value">Valor por Metro Quadrado <b>R$ 3.200</b></p></span>
+                    </div>
+                    
+                    <div class="simulation-result-2">
+                        <p class="city-estate">São Paulo - SP</p>
+                        <p class="type-neighborhood">Sobrado - Jardim Maria Rosa</p>
+                        <p class="property-details">92m² . 2 Quartos . 1 Banheiro . 2 Vagas </p>
+                        <h1 class="simulation-value">R$ 310.000</h1>
+                        <span><img src="" alt=""> <p class="icon-value">Valor por Metro Quadrado <b>R$ 3.760</b></p></span>
                     </div>
                 </div>
-                
-                <div class="smallSquare2">
-                    <div class="InformationsSmallSquare">
-                        <p class="cityStateSmallSquare">São Paulo - SP</p>
-                        <p class="typeNeighborhoodSmallSquare">Sobrado - Jardim Maria Rosa</p>
-                        <p class="detailsSmallSquare">92m²  &#8226;  2 Quartos  &#8226;  1 Banheiro  &#8226;  2 Vagas</p>
-                        <h1 class="valueSmallSquare">R$ 310.000</h1>
-                            <div class="icontextSmallSquare">
-                                <img src="../assets/Img/information.png" alt="Ícone" class="icon">
-                                <p class="valueM²SmallSquare">Valor por Metro Quadrado: <b>R$ 3.760</b></p> 
-                            </div>
-                    </div>
-                </div>
-                <div class="iconLocalizationSmallSquare">
-                    <img src="../assets/Img/pin-de-localizacao.png" alt="Ícone" class="icon">
-                    <p class="valueM²SmallSquare">Vizualizar Informações de Precificação do Bairro e Região</p> 
+                <div class="see-informations">
+                    <span><img src="" alt=""><a href="#">Visualizar Informações de Precificação do Bairro e Região</a></span>
+
                 </div>
                 
-                <div class="threeButtons"> <!--Botões começam aqui-->
-                    <a href="../index.html">
-                        <button class="whiteButton">Refazer</button>
-                    </a>
-    
-                    <a href="../pages/characteristics.html">
-                        <button class="blueButtonSave">Salvar</button>
-                    </a>
-    
-                    <a href="../pages/characteristics.html">
-                        <button class="blueButtonGenerate">Gerar PDF</button>
-                    </a>
-                </div> <!--Botões terminam aqui-->
                 
-            </div><!--Informações de projeção de vendas terminam aqui-->
+                
+                
+                
+                
+                <div class="button-container">
+                    <a href="../index.html">Refazer</a>
+                    <button><a href="../pages/result.html">Salvar</a></button>
+                    <button><a href="../pages/result.html">Gerar PDF</a></button>
+                    
+                </div>
+                </form>
+            </div>
+        </div>
+    </main>
 
 
-            
-    </div><!--Div para tudo termina aqui-->
+    <!-- Biblioteca de fonte -->
+    <script src="https://kit.fontawesome.com/76453bfcde.js" crossorigin="anonymous"></script>
 </body>
 </html>
+
+

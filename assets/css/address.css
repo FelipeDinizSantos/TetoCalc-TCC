@@ -1,145 +1,215 @@
-img{
-    margin-top: 8px;
-    height: 64px;
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25+Charted&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Reset das estilizações padrões */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: 0px;
 }
 
-.allThings{
-    margin-left: 119px;
-}
-
-.tetocalcParagraphs {
-    display: inline-block;
-}
-
-p.tetocalc1{
-    margin-top: 29px;
+body{
+    width: 100%;
     font-family: "Red Hat Display", sans-serif;
-    font-size: 13px;
-    color: #858584;
-    text-decoration: none;
+    /* height: ; */
 }
 
-p.tetocalc2{
-    margin-top: 29px;   
-    font-family: "Red Hat Display", sans-serif;
-    font-style: italic;
-    font-size: 13px;
-    color: #9c9c9c;
-    text-decoration: none;
-}
 
-p.options{
-    margin-bottom: 4px;
-    font-family: "Red Hat Display", sans-serif;
-    font-weight: bold;
-}
-
-h1{
-    margin-top: 20px;
-    margin-bottom: 5px;
-    font-family: "Red Hat Display", sans-serif;
-}
-
-.ListBoxes{
-    position: absolute;
-    right: 0;
-    margin-right: 6rem;
+/* Cabeçalho */
+.header{
+    width: 100%;
+    height: 20vh;
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    justify-content: space-around;
+    padding: 0px 0px 0px 15vw;
 }
 
-.list{
-    border-radius: 1px;
-    font-family: "Red Hat Display", sans-serif;
-    padding: 5px 230px 5px;
+.header img{
+    width: 20vw;
 }
 
-.twoButtons{
+.header span{
     display: flex;
-    background-color: red;
-    margin-left: 446px;
-    width: 10px;
-    height: 10px;
-    margin-top: 280px;
-    
-   }
-
-button.blueButton{
-    border-radius: 3px;
-    border: none;
-    font-weight: bold;
-    font-family: "Red Hat Display", sans-serif;
-    background-color: #3D3F92;
-    color: white;
-    padding: 10px 45px 10px;
+    gap: 5px;
 }
 
-button.whiteButton{
-    margin-right: 350px;
-    border-radius: 3px;
-    border-width: 1px;
-    font-weight: bold;
-    font-family: "Red Hat Display", sans-serif;
-    background-color: white;
-    color: black;
-    padding: 8px 49px 8px;
+.header span a{
+    text-decoration: none;
+    color: #151515;
 }
 
-.RectangleObjects{
+.header span p{
+    font-style: italic;
+    color: #aaa;
+}
+
+
+/* Conteúdo principal */
+.main-containt{
+    width: 100%;
+    height: 80vh;
+    padding: 0px 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.main-containt h1{
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.register-property{
+    width: 40vh;
+    height: 100%;
+}
+
+.register-property p{
+    background-color: #497EDA;
+    position: absolute;
+    top: 25px;
+    right: -14px;
+    padding: 1px 64px 1px 5px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.register-property .p-address{
+    background-color: #497EDA;
+    position: absolute;
+    top: 100px;
+    right: -13px;
+    padding: 1px 42px 1px 5px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.retangle{
     position: relative;
+    width: 100%;
+    height: 70%;
+    border: 1px solid #eee;
     display: flex;
-    flex-direction: row;
-    border: 1px solid #dcdbdb; /* Define a borda do retângulo */
-    padding: 30px 50px;
-    width: 80% /* Define a largura do retângulo */
+    padding-right: 3vw;
 }
 
+.progress-bar{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
 
-
-.blueBoll{
-    width: 50px;
-    height: 50px;
+.progress-bar .blue-ball{
+    width: 40px;
+    height: 40px;
     background-color: #497EDA;
-    border-radius: 50%; /* Faz com que a div tenha forma de círculo */
+    border-radius: 50%;
 }
 
-.greyBoll{
-    width: 50px;
-    height: 50px;
+.progress-bar .grey-ball{
+    width: 40px;
+    height: 40px;
     background-color: #D9D9D9;
-    border-radius: 50%; /* Faz com que a div tenha forma de círculo */
+    border-radius: 50%;
 }
 
-.greyWire{
-    margin-left: 24.2px;
+.progress-bar .line{
     width: 2px;
-    height: 50px;
     background-color: #D9D9D9;
+    position: absolute;
+    z-index: -1;
 }
 
-.blueWire{
-    margin-left: 24.2px;
-    width: 2px;
-    height: 50px;
-    background-color: #497EDA;
+.progress-bar #grey-line{
+    height: 73.8%;
+    bottom: 25px;
 }
 
-
-.circleText{
-    display: inline-block;
-    vertical-align: middle;
-    margin-top: 12px;
-    margin-left: 65px;
-    width: 120px;
+.progress-bar #blue-line{
     background-color: #497EDA;
-    color: white;
-    font-family: "Red Hat Display", sans-serif;
+    height: 30%;
+    top: 10%;
+    z-index: 1;
+}
+
+.property-information{
+    width: 73%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.property-information form{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding: 0px 3vw 0px 10px;
+    gap: 20px;
+    
+}
+
+.property-information .input-container{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.property-information form label{
     font-weight: bold;
-    padding: 2px 4px; 
 }
 
-.bola-link {
-    display: inline-block; /* Faz com que o link tenha o tamanho do conteúdo */
-    text-decoration: none; /* Remove sublinhado do link */
-  }
+.property-information form input{
+    width: 100%;
+    height: 5vh;
+    outline: 0px;
+    border: 1px solid #cacaca;
+    padding: 0px 10px;
+    border-radius: 2.5px;
+}
+
+.button-container{
+    
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-container button a{
+    color: #fff;
+    font-family: "Red Hat Display", sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    background-color: #3D3F92;
+    padding: 8px 40px;
+    border-radius: 3.5px;
+    border: none;
+}
+
+.button-container a{
+    display: inline-block;
+    color: #151515;
+    font-family: "Red Hat Display", sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    border: 1px solid#151515;
+    background-color: #fff;
+    padding: 6px 40px;
+    border-radius: 3.5px;
+}
+
+
