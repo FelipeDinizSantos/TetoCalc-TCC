@@ -1,0 +1,74 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25+Charted&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Reset das estilizações padrões */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: 0px;
+}
+
+body{
+    width: 100%;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+/* Cabeçalho */
+.header{
+    gap: 10px;
+    padding: 0px 0px 40px;
+}
+
+.header img{
+    width: 80vw;
+}
+
+.header h2{
+    font-size: 19px;
+}
+
+/* CONTEÚDO PRINCIPAL */
+
+
+.retangle{
+    width: 105%;
+    height: auto;
+}
+
+.button-container{
+    display: flex;
+    padding: 20px;
+    gap: 58px;
+}
+
+.button-container button a {
+    padding: 8px 29px;
+}
+
+.button-container button .register-button {
+    padding: 8px 15px;
+}
+
+.main-containt {
+    padding: 0px 5vw;
+}
+
+.property-information{
+    width: 100%;
+    height: auto;
+    padding: 0px 20px 35px 20px;
+}
+
+.property-information p{
+    height: auto;
+    padding: 10%;
+}
+
+/* .button-container {
+    flex-direction: column;
+    gap: 20px;
+} */
+
+

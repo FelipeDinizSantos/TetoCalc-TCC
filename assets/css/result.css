@@ -63,6 +63,20 @@ body{
     font-size: 2.5rem;
 }
 
+.main-containt .icon-local{
+    width: 4%;
+    height: 50%;
+}
+
+.main-containt .icon-information{
+    width: 2%;
+    height: 50%;
+}
+
+.main-containt .join-text-image{
+    display: flex;
+}
+
 .register-property{
     width: 40vh;
     height: 100%;
@@ -181,19 +195,80 @@ body{
     justify-content: center;
     gap: 20px;/**/
 }
+.property-information .first-informations p{
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 130%;
+}
+
+.property-information .first-informations .value{
+    font-weight: bold;
+}
+
+.property-information .first-informations .icon-value{
+    font-size: 70%;
+}
 
 .property-information .second-informations{
     display: flex;
     
+    
 }
+
+.property-information .second-informations .simulation-result-1, .simulation-result-2{
+    width: 30%;
+    height: 100%;
+    border: 1px solid green;
+}
+
+
+
+
+.property-information .second-informations p,h1{
+   
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 80%;
+}
+
+.property-information .second-informations .city-estate{
+    font-weight: bold;
+    color: #6A6565;
+}
+
+.property-information .second-informations .type-neighborhood{
+    font-weight: 470;
+}
+
+.property-information .second-informations .property-details{
+    font-size: 60%;
+}
+
+.property-information .second-informations .simulation-value{
+    font-weight: bold;
+    font-size: 130%;
+}
+
+.property-information .second-informations .icon-value{
+    font-size: 60%;
+}
+
+.property-information .see-informations{
+    display: flex;
+    justify-content: center;
+}
+.property-information .see-informations a{
+    color: #151515;
+}
+
+
+
+
 
 .button-container{
     width: 100%;
     height: 10vh;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-
+    align-items: center;    
 }
 
 .button-container button a{

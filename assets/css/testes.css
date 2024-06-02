@@ -1,0 +1,42 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do contêiner */
+.floating-placeholder {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Estilos do campo de entrada */
+.floating-placeholder input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Estilos do rótulo */
+.floating-placeholder label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+    color: #aaa;
+    transition: 0.2s;
+    pointer-events: none;
+}
+
+/* Quando o campo está focado ou não está vazio */
+.floating-placeholder input:focus + label,
+.floating-placeholder input:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: #333;
+}
