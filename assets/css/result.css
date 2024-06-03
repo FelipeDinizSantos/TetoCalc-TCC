@@ -64,17 +64,13 @@ body{
 }
 
 .main-containt .icon-local{
-    width: 4%;
-    height: 50%;
-}
-
-.main-containt .icon-information{
-    width: 2%;
-    height: 50%;
+    width: 3%;
+    height: 65%;
 }
 
 .main-containt .join-text-image{
     display: flex;
+    gap: 1%;
 }
 
 .register-property{
@@ -133,11 +129,10 @@ body{
 }
 
 .retangle{
-    background-color: red;
     position: relative;
     width: 100%;
     height: 70%;
-    border: 1px solid #eee;
+    border: 1px solid #CCCCCC;
     display: flex;
     padding-right: 3vw;
 }
@@ -186,76 +181,107 @@ body{
 }
 
 .property-information{
-    background-color: #ccc;
     width: 73%;
     height: 100%;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    gap: 20px;/**/
 }
-.property-information .first-informations p{
+
+.property-information .icon-information{
+    width: 3%;
+    height: 1%;
+}
+
+.sales-projection, container-join-value, title-simulation{
+    padding: 0px 0px 10px 0px;
+    
+}
+
+.container-informations{
+    gap: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70%;
+}
+
+.first-informations{
+    width: 70%;
+    height: 37%;
+}
+
+.first-informations p{
     font-family: "Red Hat Display", sans-serif;
     font-size: 130%;
 }
 
-.property-information .first-informations .value{
+.first-informations .value{
     font-weight: bold;
 }
 
-.property-information .first-informations .icon-value{
-    font-size: 70%;
+.first-informations .icon-value{
+    font-size: 70%;   
 }
 
-.property-information .second-informations{
+.second-informations{
     display: flex;
-    
-    
+    gap: 20px;
+    width: 70%;
+    height: 40%;
 }
 
-.property-information .second-informations .simulation-result-1, .simulation-result-2{
-    width: 30%;
+.second-informations .simulation-result-1, .simulation-result-2{
+    width: 50%;
     height: 100%;
-    border: 1px solid green;
-}
-
-
-
-
-.property-information .second-informations p,h1{
+    padding: 10px 0px 0px 10px;
+    border: 1px solid #CCCCCC;
+}   
+/* -------------------------------------------------------- */
+.second-informations p,h1{
    
     font-family: "Red Hat Display", sans-serif;
     font-size: 80%;
 }
 
-.property-information .second-informations .city-estate{
+.second-informations .city-estate{
+    
     font-weight: bold;
     color: #6A6565;
 }
 
-.property-information .second-informations .type-neighborhood{
+.second-informations .type-neighborhood{
     font-weight: 470;
 }
 
-.property-information .second-informations .property-details{
+.second-informations .property-details{
     font-size: 60%;
 }
 
-.property-information .second-informations .simulation-value{
-    font-weight: bold;
-    font-size: 130%;
+.second-informations .simulation-value{
+        font-weight: bold;
+        font-size: 130%;
 }
 
-.property-information .second-informations .icon-value{
+.second-informations .icon-value{
     font-size: 60%;
 }
 
-.property-information .see-informations{
+.second-informations .icon-information{
+    width: 10px;
+    height: 10px;
+}
+
+/* .property-information .see-informations{
     display: flex;
     justify-content: center;
+} */
+.see-informations{
+    width: 70%;
 }
-.property-information .see-informations a{
+
+.see-informations a{
     color: #151515;
 }
 
@@ -267,8 +293,10 @@ body{
     width: 100%;
     height: 10vh;
     display: flex;
-    justify-content: space-between;
-    align-items: center;    
+    /* justify-content: space-between   ; */
+    justify-content: center;
+    align-items: center;  
+    gap: 8%;  
 }
 
 .button-container button a{

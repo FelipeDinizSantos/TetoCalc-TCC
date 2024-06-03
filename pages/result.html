@@ -6,7 +6,7 @@
     <!-- Link Css -->
     <link rel="stylesheet" href="../assets/css/result.css">
     <!-- Link para o mobile -->
-    <link rel="stylesheet" href="../assets/css/mobile/result-mobile.css" media="screen and (max-width: 500px)">
+    <link rel="stylesheet" href="../assets/css/mobile/result.mobile.css" media="screen and (max-width: 500px)">
     <title>Canaã Imóveis</title>
 </head>
 <body>
@@ -39,24 +39,27 @@
             </div>
            
             <div class="property-information"> <!-- estamos com um problema no css em property information. ta bugando o display flex -->
-                
-                <div class="first-informations">
-                    <p class="sales-projection">Projeção de Venda</p>
-                    <p class="value">R$ 300.000 a R$ 320.000</p>
-                    <div class="join-text-image">
-                        <img src="../assets/Img/information.png" alt="tem algo aqui" class="icon-information"><p class="icon-value">Valor por Metro Quadrado <b>R$ 3.200</b></p>
+                <div class="container-informations">
+
+                    <div class="first-informations">
+                        <p class="sales-projection">Projeção de Venda</p>
+                        <div class="container-join-value">
+                            <p class="value">R$ 300.000 a R$ 320.000</p>
+                            <div class="join-text-image">
+                                <img src="../assets/Img/information.png" alt="tem algo aqui" class="icon-information"><p class="icon-value">Valor por Metro Quadrado <b>R$ 3.200</b></p>
+                            </div>
+                        </div>
+                            <p class="title-simulation">Imóveis Usados no Estudo</p>
                     </div>
-                   <p class="title-simulation">Imóveis Usados no Estudo</p>
-                </div>
-                
-                <div class="second-informations">
-                    <div class="simulation-result-1">
+                    
+                    <div class="second-informations">
+                        <div class="simulation-result-1">
                         <p class="city-estate">São Paulo - SP</p>
                         <p class="type-neighborhood">Sobrado - Jardim Maria Rosa</p>
                         <p class="property-details">100m² <span>&#8231;</span> 2 Quartos <span>&#8231;</span> 1 Banheiro <span>&#8231;</span> 3 Vagas </p>
                         <p class="simulation-value">R$ 293.000</p>
                         <div class="join-text-image">
-                            <span><img src="../assets/Img/information.png" alt="tem imagem aqui" class="icon-information"> <p class="icon-value">Valor por Metro Quadrado <b>R$ 3.200</b></p></span>
+                            <img src="../assets/Img/information.png" alt="tem imagem aqui" class="icon-information"> <p class="icon-value">Valor por Metro Quadrado <b>R$ 3.200</b></p>
                         </div>
                     </div>
                     
@@ -66,14 +69,16 @@
                         <p class="property-details">92m² <span>&#8231;</span> 2 Quartos <span>&#8231;</span> 1 Banheiro <span>&#8231;</span> 2 Vagas </p>
                         <p class="simulation-value">R$ 310.000</p>
                         <div class="join-text-image">
-                            <span><img src="../assets/Img/information.png" alt="tem imagem aqui" class="icon-information"> <p class="icon-value">Valor por Metro Quadrado <b>R$ 3.760</b></p></span>
+                            <img src="../assets/Img/information.png" alt="tem imagem aqui" class="icon-information"> <p class="icon-value">Valor por Metro Quadrado <b>R$ 3.760</b></p>
                         </div>
                     </div>
                 </div>
                 <div class="see-informations">
                     <span><img src="../assets/Img/pin-de-localizacao.png" alt="tem imagem aqui" class="icon-local"><a href="#">Visualizar Informações de Precificação do Bairro e Região</a></span>
-
+                    
                 </div>
+            </div>
+                
                 
                 
                 
@@ -86,7 +91,6 @@
                     <button><a href="../pages/result.html">Gerar PDF</a></button>
                     
                 </div>
-                </form>
             </div>
         </div>
     </main>
