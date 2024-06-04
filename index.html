@@ -37,7 +37,7 @@
                 <form action="">
                     <div>
                         <label for="first-input">Tipo do Imovél *</label>
-                        <input list="property-type" id="first-input">
+                        <input list="property-type" name="Tipo do Imóvel" id="first-input" required>
                     </div>
                     <datalist id="property-type">
                         <option value="SOBRADO"></option>
@@ -48,7 +48,7 @@
 
                     <div>
                         <label for="second-input">Pretenção *</label>
-                        <input list="intention" id="second-input">
+                        <input list="intention" name="Pretenção" id="second-input" required>
                     </div>
 
                     <datalist id="intention">
@@ -59,7 +59,7 @@
 
                     <div>
                         <label for="third-input">Categoria *</label>
-                        <input list="category" id="third-input">
+                        <input list="category" name="Categoria" id="third-input" required>
                     </div>
     
                     <datalist id="category">
@@ -77,4 +77,5 @@
     <!-- Biblioteca de fonte -->
     <script src="https://kit.fontawesome.com/76453bfcde.js" crossorigin="anonymous"></script>
 </body>
+    <script src="./assets/js/index.js"></script>
 </html>
