@@ -29,7 +29,7 @@ document.querySelector('.property-information button').addEventListener('click',
     const currentUrl = new URL(window.location.href);
     const params = new URLSearchParams(currentUrl.search);
 
-    let path = `/pages/measurements.html?${params.toString()}&bathrooms=${bathrooms.value}&dormitories=${bedrooms.value}`;
+    let path = `/TetoCalc-TCC/pages/measurements.html?${params.toString()}&bathrooms=${bathrooms.value}&dormitories=${bedrooms.value}`;
 
     if(!/^ *$/.test(suites.value)) path += `&suites=${suites.value}`;
     if(!/^ *$/.test(parkingSpaces)) path += `&parkingSpaces=${parkingSpaces.value}`; 

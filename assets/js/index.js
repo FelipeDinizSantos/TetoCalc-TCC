@@ -57,6 +57,6 @@ document.querySelector('.property-information button').addEventListener('click',
             break
     }
 
-    const path = `/pages/address.html?status=ATIVO&type=${propertyType}&negotiation=${propertyIntention}&typeStructure=${propertyCategory}`;
+    const path = `/TetoCalc-TCC/pages/address.html?status=ATIVO&type=${propertyType}&negotiation=${propertyIntention}&typeStructure=${propertyCategory}`;
     window.location.href = window.location.origin + path;
 });

@@ -2,6 +2,7 @@ import { generatePricing } from "./api/generatePricing.js";
 import { formatValueLocation } from "./utils/formatValueLocation.js"; 
 import { calculateValuePerSquareMeter } from "./utils/calculateValuePerSquareMeter.js";
 import { getCityByNeighborhood } from "./api/getCityByNeighborhood.js";
+import { getNeighborhoodById } from "./api/getNeighborhoodById.js";
 
 window.addEventListener('load', async ()=>{
     let data;
@@ -28,27 +29,13 @@ window.addEventListener('load', async ()=>{
     valuePerSquareMeter.innerHTML = `Valor por Metro Quadrado <b>${formatValueLocation(calculateValuePerSquareMeter(data.data.projectedValueOfTheProperty, data.data.targetProperty.usefulArea))}</b>`;
 
     propertieContainer = document.querySelectorAll('.property-container');
+
     propertieContainer[0].querySelector('.city-estate').innerHTML = await getCityByNeighborhood(data.data.propertiesUsedInProjection[0].neighborhoodId);
-    propertieContainer[1].querySelector('.city-estate').innerHTML = await getCityByNeighborhood(data.data.propertiesUsedInProjection[1].neighborhoodId);
+    propertieContainer[0].querySelector('.type-neighborhood').innerHTML = `${data.data.propertiesUsedInProjection[0].type} - ${await getNeighborhoodById(data.data.propertiesUsedInProjection[0].neighborhoodId)}`;
 
-// import { configs } from "../config/config.js";
+    propertieContainer[0].querySelector('.property-details').innerHTML = `${data.data.propertiesUsedInProjection[0].usefulArea}m² <span>&#8231;</span> ${data.data.propertiesUsedInProjection[0].dormitories} Quartos <span>&#8231;</span> ${data.data.propertiesUsedInProjection[0].bathrooms} Banheiros <span>&#8231;</span> ${data.data.propertiesUsedInProjection[0].parkingSpaces} Vagas`;
 
-// export async function getCityByNeighborhood(neighborhoodId){
-//     try {
-//         const apiUrl = configs.api_url;
-//         const baseUrl = apiUrl.split('/api/')[0] + '/api/neighborhoods';
-//         console.log(baseUrl);
+    propertieContainer[0].querySelector('.simulation-value').innerHTML = `${formatValueLocation(data.data.propertiesUsedInProjection[0].value)}`;
 
-//         const response = await fetch(baseUrl);
-
-//         if (!response.ok) {
-//             throw new Error(`Response Network Error: ${response.status} ${response.statusText}`);
-//         }
-
-//         const data = await response.json();
-//         console.log(data);
-//     } catch (error) {
-//         console.error('Houve um problema na requisição: ', error);
-//     }
-// }
-})
+    propertieContainer[0].querySelector('.icon-value-valuePerSquareMeter').innerHTML = `Valor por Metro Quadrado <b>${formatValueLocation(data.data.propertiesUsedInProjection[0].valuePerSquareMeter)}</b>`;
+});

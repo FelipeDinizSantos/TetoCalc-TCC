@@ -13,7 +13,7 @@ document.querySelector('.property-information button').addEventListener('click',
         return;
     }
 
-    let path = `/pages/result.html?${params.toString()}&usefulArea=${usefulArea.value}`
+    let path = `/TetoCalc-TCC/pages/result.html?${params.toString()}&usefulArea=${usefulArea.value}`
 
     if(parseFloat(builtArea.value) < 10){
         alert(`O campo ${builtArea.name.toUpperCase()} precisa ser maior ou igual a 10`);
