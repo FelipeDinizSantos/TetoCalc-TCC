@@ -1,6 +1,6 @@
 import { configs } from "../config/config.js";
 
-export async function requestAPI(url) {
+export async function generatePricing(url) {
     const urlString = String(url);
     const queryIndex = urlString.indexOf('?');
     const params = urlString.slice(queryIndex + 1);

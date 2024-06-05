@@ -1,5 +1,3 @@
-import { requestAPI } from "./api/request.js";
-
 document.querySelector('.property-information button').addEventListener('click', async (e)=>{
     e.preventDefault();
     
@@ -33,14 +31,6 @@ document.querySelector('.property-information button').addEventListener('click',
     if (!isNaN(parseFloat(landArea.value))) {
         path += `&landArea=${landArea.value}`;
     }
-   
-    console.log(window.location.origin + path);
-
-    try {
-        console.log(await requestAPI(window.location.origin + path));
-    } catch (error) {
-        console.log(error);
-    }
     
-    // window.location.href = window.location.origin + path;
+    window.location.href = window.location.origin + path;
 })
