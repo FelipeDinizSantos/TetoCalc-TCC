@@ -29,6 +29,10 @@ document.querySelector('.property-information button').addEventListener('click',
     const currentUrl = new URL(window.location.href);
     const params = new URLSearchParams(currentUrl.search);
 
-    const path = `/pages/measurements.html?${params.toString()}&parkingSpaces=${parkingSpaces.value === ''?0:parkingSpaces.value}&bathrooms=${bathrooms.value}&suites=${suites.value === ''?0:suites.value}&dormitories=${bedrooms.value}`;
+    let path = `/pages/measurements.html?${params.toString()}&bathrooms=${bathrooms.value}&dormitories=${bedrooms.value}`;
+
+    if(!/^ *$/.test(suites.value)) path += `&suites=${suites.value}`;
+    if(!/^ *$/.test(parkingSpaces)) path += `&parkingSpaces=${parkingSpaces.value}`; 
+
     window.location.href = window.location.origin + path;
 })

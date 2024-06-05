@@ -34,6 +34,8 @@ document.querySelector('.property-information button').addEventListener('click',
         path += `&landArea=${landArea.value}`;
     }
    
+    console.log(window.location.origin + path);
+
     try {
         console.log(await requestAPI(window.location.origin + path));
     } catch (error) {
