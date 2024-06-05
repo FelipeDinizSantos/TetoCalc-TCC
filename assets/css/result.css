@@ -78,7 +78,7 @@ body{
     height: 100%;
 }
 
-.register-property p{
+.register-property .p-property{
     background-color: #497EDA;
     position: absolute;
     top: 25px;
@@ -147,6 +147,7 @@ body{
     position: relative;
 }
 
+
 .progress-bar .blue-ball{
     width: 40px;
     height: 40px;
@@ -187,6 +188,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
 .property-information .icon-information{
