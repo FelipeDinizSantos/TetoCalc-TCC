@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         data = (await generatePricing(window.location.href)).data;
 
         if (data.LevelOfPricingAccuracy.nivel === '4') {
-            window.location.href = window.origin + `${configs.domainSuffix}pages/insufficientData.html`;
+            window.location.href = window.origin + `${configs.domain_suffix}pages/insufficientData.html`;
             return;
         }
 

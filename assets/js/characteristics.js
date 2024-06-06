@@ -31,7 +31,7 @@ document.querySelector('.property-information button').addEventListener('click',
     const currentUrl = new URL(window.location.href);
     const params = new URLSearchParams(currentUrl.search);
 
-    let path = `${configs.domainSuffix}pages/measurements.html?${params.toString()}&bathrooms=${bathrooms.value}&dormitories=${bedrooms.value}`;
+    let path = `${configs.domain_suffix}pages/measurements.html?${params.toString()}&bathrooms=${bathrooms.value}&dormitories=${bedrooms.value}`;
 
     if(!/^ *$/.test(suites.value)) path += `&suites=${suites.value}`;
     if(!/^ *$/.test(parkingSpaces.value)) path += `&parkingSpaces=${parkingSpaces.value}`; 

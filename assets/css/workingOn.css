@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25+Charted&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+body{
+    background-color: #F1F1F1;
+    color: #787878;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Red Hat Dispay';
+}
+
+h1{
+    font-size: 5em;
+}
+
+p{
+    font-size: 2em;
+    margin-top: -1.5em;
+}
+
+button{
+    font-size: 1em;
+    padding: .5em 1.5em;
+    border-radius: 5px;
+    background-color: #3D3F92;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
