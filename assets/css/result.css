@@ -197,9 +197,13 @@ body{
     height: 1%;
 }
 
-.sales-projection, container-join-value, title-simulation{
+.sales-projection{
     padding: 0px 0px 10px 0px;
     
+}
+
+.title-simulation{
+    margin-top: .5em;
 }
 
 .container-informations{
@@ -222,10 +226,11 @@ body{
 
 .first-informations .value{
     font-weight: bold;
+    font-size: 2em;
 }
 
 .first-informations .icon-value{
-    font-size: 70%;   
+    font-size:1em;   
 }
 
 .second-informations{
@@ -233,10 +238,11 @@ body{
     gap: 20px;
     width: 70%;
     height: 40%;
+    margin-top: 1em;
 }
 
 .second-informations .simulation-result-1, .simulation-result-2{
-    width: 50%;
+    width: 60%;
     height: 100%;
     padding: 10px 0px 0px 10px;
     border: 1px solid #CCCCCC;
@@ -259,7 +265,7 @@ body{
 }
 
 .second-informations .property-details{
-    font-size: 60%;
+    font-size: 1em;
 }
 
 .second-informations .simulation-value{
@@ -268,7 +274,7 @@ body{
 }
 
 .second-informations .icon-value{
-    font-size: 60%;
+    font-size: 1em;
 }
 
 .second-informations .icon-information{
