@@ -20,6 +20,6 @@ document.querySelector('.property-information button').addEventListener('click',
     const currentUrl = new URL(window.location.href);
     const params = new URLSearchParams(currentUrl.search);
     
-    const path = `/TetoCalc-TCC/pages/characteristics.html?${params.toString()}&neighborhoodId=${neighborhoodElement.getAttribute('aria-label')}`;
+    const path = `${configs.domainSuffix}pages/characteristics.html?${params.toString()}&neighborhoodId=${neighborhoodElement.getAttribute('aria-label')}`;
     window.location.href = window.location.origin + path;    
 });

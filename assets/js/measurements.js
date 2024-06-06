@@ -1,3 +1,5 @@
+import { configs } from "./config/config.js";
+
 document.querySelector('.property-information button').addEventListener('click', async (e)=>{
     e.preventDefault();
     
@@ -13,7 +15,7 @@ document.querySelector('.property-information button').addEventListener('click',
         return;
     }
 
-    let path = `/TetoCalc-TCC/pages/result.html?${params.toString()}&usefulArea=${usefulArea.value}`
+    let path = `${configs.domainSuffix}pages/result.html?${params.toString()}&usefulArea=${usefulArea.value}`
 
     if(parseFloat(builtArea.value) < 10){
         alert(`O campo ${builtArea.name.toUpperCase()} precisa ser maior ou igual a 10`);

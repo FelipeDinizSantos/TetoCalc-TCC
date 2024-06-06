@@ -1,0 +1,10 @@
+.errorMessage{
+    margin-left: 4em;
+    width: 90%;
+}
+
+.button-container{
+    position: relative;
+    right: 0;
+    align-self: flex-end;
+}

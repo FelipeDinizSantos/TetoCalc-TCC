@@ -1,3 +1,5 @@
+import { configs } from "./config/config.js";
+
 document.querySelector('.property-information button').addEventListener('click', (e)=>{
     e.preventDefault();
 
@@ -57,6 +59,6 @@ document.querySelector('.property-information button').addEventListener('click',
             break
     }
 
-    const path = `/TetoCalc-TCC/pages/address.html?status=ATIVO&type=${propertyType}&negotiation=${propertyIntention}&typeStructure=${propertyCategory}`;
+    const path = `${configs.domainSuffix}pages/address.html?status=ATIVO&type=${propertyType}&negotiation=${propertyIntention}&typeStructure=${propertyCategory}`;
     window.location.href = window.location.origin + path;
 });
