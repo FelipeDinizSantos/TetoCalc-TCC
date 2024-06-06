@@ -18,12 +18,13 @@ body{
 
 /* Cabeçalho */
 .header{
-    
     padding: 5px 10px;
+    /* background-color: rgb(255, 0, 0); */
 }
 
 .header img{
     width: 100vw;
+   
 }
 
 .header span{
@@ -33,46 +34,35 @@ body{
 
 /* Conteúdo principal */
 .main-containt{
-    /* background-color: #ccc; */
     padding: 5px 10px;
     justify-content: start;
 }
 
 .main-containt h1{
-    font-size: 130%;
+    font-size: 23px;
 }
 
+.retangle{
+    padding: 10px 0px 0px 0px;
+    height: 190%;
+
+}
 .register-property{
-    /* background-color: #aaa; */
-    width: 25vw;
+    /* background-color: red; */
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
 }
 
-.register-property p{
-    background-color: transparent;
-    color: #151515;
-    left: 0%;
-    font-size: 2rem;
-    transform: translateX(113%);
-    font-weight: 400;
-    top: 1%;
-}
-
-.progress-bar{
-    padding-left: 10px;
-}
-
-.progress-bar .blue-ball{
-    width: 30px;
-    height: 30px;
-}
-
-.progress-bar .grey-ball{
-    width: 30px;
-    height: 30px;
-}
-
-.property-information form button a{
-    top: 100%;
-    padding: 8px 40px;
+.container-informations{
+    gap: 10px;
     
 }
+
+.simulation-result{
+    width: 100%;
+    height: 19%;
+}
+
+

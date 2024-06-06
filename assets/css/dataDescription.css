@@ -1,0 +1,168 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25+Charted&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Reset das estilizações padrões */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: 0px;
+}
+
+body{
+    width: 100%;
+    font-family: "Red Hat Display", sans-serif;
+    /* height: ; */
+}
+
+
+/* Cabeçalho */
+.header{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0px 0px 0px 15vw;
+}
+
+.header img{
+    width: 20vw;
+}
+
+.header span{
+    display: flex;
+    gap: 5px;
+}
+
+.header span a{
+    text-decoration: none;
+    color: #151515;
+}
+
+.header span p{
+    font-style: italic;
+    color: #aaa;
+}
+
+/* Conteúdo principal */
+.main-containt{
+    width: 100%;
+    height: 80vh;
+    padding: 0px 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.main-containt h1{
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.retangle{
+    position: relative;
+    width: 100%;
+    height: 70%;
+    border: 1px solid #CCCCCC;
+    display: flex;
+    justify-content: center;
+    /* background-color: #CCCCCC; */
+}
+
+.register-property{
+    width: 95%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-informations{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* background-color: antiquewhite; */
+    height: 90%;
+    width: 100%;
+    align-items: center;
+    justify-self: center;
+}
+
+.simulation-result{
+    padding: 10px;
+    width: 30%;
+    height: 38%;
+    border: 1px solid #CCCCCC;
+}
+
+.simulation-result .city-estate, .simulation-value{
+    font-weight: bold;
+}
+
+.simulation-result .city-estate{
+    color: #6A6565;
+}
+
+.simulation-result .type-neighborhood{
+    font-size: 130%;
+}
+
+.simulation-result .property-details{
+    font-size: 70%;
+}
+
+.simulation-result .simulation-value{
+    font-size: 170%;
+}
+
+.simulation-result .icon-information{
+    width: 1.8%;
+    height: 50%;
+}
+
+.simulation-result .icon-value-valuePerSquareMeter{
+    font-size: 80%;
+}
+
+.simulation-result .join-text-image{
+    display: flex;
+    gap: 0.2%;
+}
+
+.button-container{
+    /* background-color: red; */
+    width: 100%;
+    height: 9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    gap: 8%;  
+}
+
+.button-container button a{
+    color: #fff;
+    font-family: "Red Hat Display", sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    background-color: #3D3F92;
+    padding: 8px 40px;
+    border-radius: 3.5px;
+    border: none;
+}
+
+.button-container a{
+    display: inline-block;
+    color: #151515;
+    font-family: "Red Hat Display", sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    border: 1px solid#151515;
+    background-color: #fff;
+    padding: 6px 40px;
+    border-radius: 3.5px;
+}

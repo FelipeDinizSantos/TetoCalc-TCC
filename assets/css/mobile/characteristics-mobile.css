@@ -18,12 +18,13 @@ body{
 
 /* Cabeçalho */
 .header{
-    height: 10vh;
-    padding: 0px 15px;
+    padding: 5px 10px;
+    /* background-color: rgb(255, 0, 0); */
 }
 
 .header img{
-    width: 45vw;
+    width: 100vw;
+   
 }
 
 .header span{
@@ -33,9 +34,12 @@ body{
 
 /* Conteúdo principal */
 .main-containt{
-    /* background-color: #ccc; */
     padding: 5px 10px;
     justify-content: start;
+}
+
+.main-containt h1{
+    font-size: 130%;
 }
 
 .register-property{

@@ -19,7 +19,7 @@ body{
 /* Cabeçalho */
 .header{
     padding: 5px 10px;
-    background-color: rgb(255, 0, 0);
+    /* background-color: rgb(255, 0, 0); */
 }
 
 .header img{
@@ -39,22 +39,27 @@ body{
 }
 
 .main-containt h1{
-    font-size: 23px;
+    font-size: 130%;
+}
+
+.main-containt .icon-local{
+    width: 5%;
+    height: 30%;
 }
 
 .register-property{
-    background-color: red;
+    /* background-color: red; */
     height: 100%;
     width: 26%;
     
 }
 
 .property-information{
-    background-color: lime;
+    /* background-color: lime; */
     width: 82%;
 }
 
-.progress-bar .p-address, .p-characteristics, .p-measurements, .p-property{    
+.progress-bar .p-address, .p-characteristics, .p-measurements, .p-property, .p-result{    
     display: none;
 }
 
@@ -65,13 +70,13 @@ body{
 
 .container-informations{
     align-items: start;
-    background-color: aqua;
+    /* background-color: aqua; */
     width: 100%;
     height: 90%;
 }
 
 .first-informations{
-    background-color: #ccc;
+    /* background-color: #ccc; */
     width: 100%;
     height: 25%;
 }
@@ -87,8 +92,20 @@ body{
 .see-informations
 
 {
-    background-color: red;
+    /* background-color: red; */
     width: 90%;
     font-size: 90%;
 }
 
+.button-container{
+    align-items: start;
+}
+
+.button-container button a{
+    padding: 9px 12px;
+
+}
+
+.button-container a{
+    padding: 6px 15px;
+}
