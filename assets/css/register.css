@@ -63,7 +63,8 @@ body {
 
 .property-information p {
     font-weight: bold;
-    font-size: 170%;
+    font-size: 2em;
+    padding: 1em;
 }
 
 .property-information form {
@@ -115,11 +116,8 @@ body {
 
 .button-container {
     display: flex;
+    margin-top: 2em;
     gap: 70px;
-}
-
-.button-container button {
-    background-color: aquamarine;
 }
 
 .button-container button a {

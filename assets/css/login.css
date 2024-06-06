@@ -106,26 +106,26 @@ body{
     gap: 70px;
 }
 
-.button-container button{
-    background-color: aquamarine;
-}
 
 .button-container button a {
-    color: #fff;    
+    color: #000;    
     font-family: "Red Hat Display", sans-serif;
     text-decoration: none;
     font-weight: 500;
-    background-color: #3D3F92;
+    background-color: #fff;
+    border: 1px solid black;
     padding: 8px 40px;
     border-radius: 3px;
 }
 
 .button-container button .register-button {
     padding: 8px 29px;
-    
+    background-color: #3D3F92;
+    color: #fff;    
+    border: none;
 }
 
-
-
-
-
+.registerLink{
+    position: absolute;
+    margin-top: 60vh;
+}

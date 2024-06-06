@@ -10,11 +10,6 @@
     <title>Canaã Imóveis</title>
 </head>
 <body>
-    <div class="loading-screen">
-        <div class="loader"></div>
-        <p>Montando seu estudo ...</p>
-    </div>
-
     <!-- Cabecalho -->
     <header class="header">
         <img src="../assets/Img/main_logo_canaa.png" alt="Logo canaã">
@@ -25,6 +20,10 @@
     <main class="main-containt">
         <h1>Descubra Quanto Vale o Seu Imóvel:</h1>
         <div class="retangle">
+            <div class="loading-screen">
+                <div class="loader"></div>
+                <p>Montando seu estudo ...</p>
+            </div>
             <div class="register-property">
                 <div class="progress-bar">
                     <p class="p-property">Imóvel</p>
@@ -53,7 +52,7 @@
                                 <img src="../assets/Img/information.png" alt="ícone de informação" class="icon-information"><p class="icon-value valuePerSquareMeter"></p>
                             </div>
                         </div>
-                        <p class="title-simulation">Imóveis Usados no Estudo</p>
+                        <p class="title-simulation">Um dos imóveis utilizados:</p>
                     </div>
                     <div class="second-informations property-container">
                         <div class="simulation-result-1">
@@ -68,13 +67,12 @@
                     <img src="../assets/Img/right-arrow.png" id="more-properties">
                 </div>
                 <div class="see-informations">
-                    <span><img src="../assets/Img/pin-de-localizacao.png" alt="ícone de localização" class="icon-local"><a href="#">Visualizar Informações de Precificação do Bairro e Região</a></span>
-                    
+                    <span><img src="../assets/Img/pin-de-localizacao.png" alt="ícone de localização" class="icon-local"><a href="#" class="save-pricing">Visualizar Informações de Precificação do Bairro e Região</a></span>
                 </div>
             </div>
                 <div class="button-container">
                     <a href="../index.html">Refazer</a>
-                    <button><a href="../pages/register.html">Salvar</a></button>
+                    <button><a href="#" class="save-pricing">Ver Imóveis</a></button>
                     <button><a href="#">Gerar PDF</a></button>
                 </div>
             </div>

@@ -44,6 +44,16 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 });
 
+document.querySelectorAll('.save-pricing').forEach(button => button.addEventListener('click', (e)=>{
+    e.preventDefault();
+
+    const currentUrl = new URL(window.location.href);
+    const params = new URLSearchParams(currentUrl.search);
+
+    let path = `${configs.domainSuffix}pages/dataDescription.html?${params.toString()}`;
+    window.location.href = window.location.origin + path;
+}));
+
 document.addEventListener('DOMContentLoaded', () => {
     const textElement = document.querySelector('.loading-screen p');
     const text = textElement.textContent;

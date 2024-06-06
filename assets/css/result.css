@@ -70,6 +70,7 @@ body{
 
 .main-containt .join-text-image{
     display: flex;
+    align-items: center;
     gap: 1%;
 }
 
@@ -280,6 +281,9 @@ body{
     justify-content: center;
 } */
 .see-informations{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 70%;
 }
 
@@ -341,16 +345,9 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2em;
+    gap: 1.5em;
     z-index: 3;
     font-size: 2em;
-}
-
-.loading-screen p{
-    display: inline-block;
-    overflow: hidden;
-    width: fit-content;
-    white-space: nowrap;
 }
 
 .loader {
