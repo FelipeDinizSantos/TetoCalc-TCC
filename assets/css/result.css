@@ -133,7 +133,7 @@ body{
     position: relative;
     width: 100%;
     height: 70%;
-    border: 1px solid #CCCCCC;
+    border: 1px solid #eee;
     display: flex;
     padding-right: 3vw;
 }

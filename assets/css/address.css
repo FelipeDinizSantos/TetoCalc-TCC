@@ -66,26 +66,7 @@ body{
 .register-property{
     width: 40vh;
     height: 100%;
-}
-
-.register-property p{
-    background-color: #497EDA;
-    position: absolute;
-    top: 25px;
-    right: -14px;
-    padding: 1px 64px 1px 5px;
-    color: #fff;
-    font-weight: 600;
-}
-
-.register-property .p-address{
-    background-color: #497EDA;
-    position: absolute;
-    top: 100px;
-    right: -13px;
-    padding: 1px 42px 1px 5px;
-    color: #fff;
-    font-weight: 600;
+    display: flex;
 }
 
 .retangle{
@@ -95,11 +76,12 @@ body{
     border: 1px solid #eee;
     display: flex;
     padding-right: 3vw;
+    gap: 15px;
 }
 
 .progress-bar{
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -138,6 +120,49 @@ body{
     height: 30%;
     top: 10%;
     z-index: 1;
+}
+
+.text-progress-bar{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: start;
+    gap: 16%;
+    padding-top: 30px;
+    /* background-color: blue; */
+
+}
+
+.text-progress-bar p{
+    background-color: #497EDA;
+    color: #fff;
+    font-weight: 600;
+}
+
+.text-progress-bar .p-property{
+    padding: 0px 70px 1px 5px;
+}
+
+.text-progress-bar .p-address{
+    padding: 0px 48px 1px 5px;
+}
+
+.text-progress-bar .p-characteristics{
+    padding: 0px 10px 1px 5px;
+}
+
+.text-progress-bar .p-measurements{
+    padding: 0px 57px 1px 5px;
+}
+
+.text-progress-bar .p-result{
+    padding: 0px 45px 1px 5px;  
+}
+
+.sumir{
+    opacity: 0;
 }
 
 .property-information{
