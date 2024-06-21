@@ -5,7 +5,7 @@ document.querySelector('.property-information button').addEventListener('click',
 
     const propertyTypeRole = ['SOBRADO', 'APARTAMENTO', 'CASA TÉRREA', 'CASA PADRÃO'];
     const propertyIntentionRole = ['VENDA', 'LOCAÇÃO'];
-    const propertyCategoryRole = ['RESIDÊNCIAL', 'COMERCIAL'];
+    const propertyCategoryRole = ['RESIDENCIAL', 'COMERCIAL'];
 
     let propertyType = document.getElementById('first-input');
     let propertyIntention = document.getElementById('second-input'); 
@@ -51,7 +51,7 @@ document.querySelector('.property-information button').addEventListener('click',
     }
 
     switch(propertyCategory.value.toUpperCase()){
-        case 'RESIDÊNCIAL':
+        case 'RESIDENCIAL':
             propertyCategory = 'RESIDENCIAL'
             break
         case 'COMERCIAL':
