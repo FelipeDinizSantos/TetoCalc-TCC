@@ -2,10 +2,12 @@ import { generatePricing } from "./api/generatePricing.js";
 import { createPropertyCard } from "./utils/createPropertyCard.js";
 import { getCityByNeighborhood } from "./api/getCityByNeighborhood.js";
 import { getNeighborhoodById } from "./api/getNeighborhoodById.js";
+import { generatePDF } from "./utils/generatePDF.js"; 
 import { configs } from "./config/config.js";
 
+let data;
+
 document.addEventListener('DOMContentLoaded', async () => {
-    let data;
     try {
         data = (await generatePricing(window.location.href)).data;
 
@@ -42,6 +44,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.log(error);
     }
 });
+
+document.querySelector('.generate-pdf').addEventListener('click', async () =>{
+    data = await generatePricing(window.location.href);
+    await generatePDF(data);
+})
 
 document.querySelector('.back').addEventListener('click', (e) => {
     e.preventDefault();

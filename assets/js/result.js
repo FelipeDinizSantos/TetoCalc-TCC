@@ -3,11 +3,14 @@ import { formatValueLocation } from "./utils/formatValueLocation.js";
 import { calculateValuePerSquareMeter } from "./utils/calculateValuePerSquareMeter.js";
 import { getCityByNeighborhood } from "./api/getCityByNeighborhood.js";
 import { getNeighborhoodById } from "./api/getNeighborhoodById.js";
+import { generatePDF } from "./utils/generatePDF.js";
 import { configs } from "./config/config.js";
+
+let data;
 
 async function loadPricingData() {
     try {
-        const data = await generatePricing(window.location.href);
+        data = await generatePricing(window.location.href);
 
         let projection;
         let valuePerSquareMeter;
@@ -74,5 +77,6 @@ function animateLoadingText() {
 document.addEventListener('DOMContentLoaded', () => {
     loadPricingData();
     animateLoadingText();
+    document.querySelector('.generate-pdf').addEventListener('click', async () => await generatePDF(data));
     document.querySelector('.save-pricing').addEventListener('click', handleSavePricingClick);
 });
