@@ -160,6 +160,16 @@ body{
     
 }
 
+.property-information form .text-select{
+    width: 100%;
+    height: 5vh;
+    outline: 0px;
+    border: 1px solid #cacaca;
+    padding: 0px 10px;
+    border-radius: 2.5px;
+    font-family: "Red Hat Display", sans-serif;
+}
+
 .property-information form{
     width: 100%;
     display: flex;
@@ -172,6 +182,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 15px;
+    /* background-color: red; */
     
 }
 

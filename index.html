@@ -42,35 +42,38 @@
                 <form action="">
                     <div>
                         <label for="first-input">Tipo do Imóvel *</label>
-                        <input list="property-type" name="Tipo do Imóvel" id="first-input" required>
+                        <!-- <input list="property-type" name="Tipo do Imóvel" id="first-input" required> -->
+                        <select id="property-type" class="property-type">
+                            <option value="#"></option>
+                            <option value="SOBRADO">Sobrado</option>
+                            <option value="APARTAMENTO">Apartamento</option>
+                            <option value="CASA TÉRREA">Casa Térrea</option>
+                            <option value="CASA PADRÃO">Casa Padrão</option>
+                        </select>
                     </div>
-                    <datalist id="property-type">
-                        <option value="SOBRADO"></option>
-                        <option value="APARTAMENTO"></option>
-                        <option value="CASA TÉRREA"></option>
-                        <option value="CASA PADRÃO"></option>
-                    </datalist>
-
+                    
                     <div>
                         <label for="second-input">Pretensão *</label>
-                        <input list="intention" name="Pretenção" id="second-input" required>
+                        <!-- <input list="intention" name="Pretenção" id="second-input" required> -->
+                        
+                        <select id="intention" class="intention">
+                            <option value="#"></option>
+                            <option value="LOCAÇÃO">Locação</option>
+                            <option value="VENDA">Venda</option>
+                        </select>
                     </div>
 
-                    <datalist id="intention">
-                        <option value="LOCAÇÃO"></option>
-                        <option value="VENDA"></option>
-                    </datalist>
-
-
+                    
                     <div>
                         <label for="third-input">Categoria *</label>
-                        <input list="category" name="Categoria" id="third-input" required>
+                        <!-- <input list="category" name="Categoria" id="third-input" required> -->
+                        
+                        <select id="category" class="category">
+                            <option value="#"></option>
+                            <option value="RESIDENCIAL">Residencial</option>
+                            <option value="COMERCIAL">Comercial</option>
+                        </select>
                     </div>
-    
-                    <datalist id="category">
-                        <option value="RESIDENCIAL"></option>
-                        <option value="COMERCIAL"></option>
-                    </datalist>
 
                     <button><a href="./pages/address.html">Avançar</a></button>
                 </form>

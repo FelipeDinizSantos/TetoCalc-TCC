@@ -3,10 +3,10 @@ import { configs } from "./config/config.js";
 document.querySelector('.property-information button').addEventListener('click', (e)=>{
     e.preventDefault();
     
-    let bedrooms = document.getElementById('first-input');
-    let suites = document.getElementById('second-input');
-    let parkingSpaces = document.getElementById('fourth-input');
-    let bathrooms = document.getElementById('third-input');
+    let bedrooms = document.getElementById('intention-0'); //mudei essas opções aqui
+    let suites = document.getElementById('intention-1');
+    let parkingSpaces = document.getElementById('intention-3');
+    let bathrooms = document.getElementById('intention-2');
 
     if(parseInt(bedrooms.value) < 0 || parseInt(bedrooms.value) > 50 || bedrooms.value === ''){
         alert(`O campo ${bedrooms.name.toUpperCase()} precisa estar entre 0 e 50`);

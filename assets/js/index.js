@@ -7,9 +7,9 @@ document.querySelector('.property-information button').addEventListener('click',
     const propertyIntentionRole = ['VENDA', 'LOCAÇÃO'];
     const propertyCategoryRole = ['RESIDENCIAL', 'COMERCIAL'];
 
-    let propertyType = document.getElementById('first-input');
-    let propertyIntention = document.getElementById('second-input'); 
-    let propertyCategory = document.getElementById('third-input');
+    let propertyType = document.getElementById('property-type');
+    let propertyIntention = document.getElementById('intention'); 
+    let propertyCategory = document.getElementById('category');
  
     if(!propertyTypeRole.find((type) => type === propertyType.value.toUpperCase())){
         alert(`O campo ${propertyType.name.toUpperCase()} é obrigatório e precisa ser um dos seguintes: ${propertyTypeRole.join(', ')}`);
