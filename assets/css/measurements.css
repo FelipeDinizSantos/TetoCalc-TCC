@@ -11,6 +11,7 @@
 }
 
 body{
+    position: relative;
     width: 100%;
     font-family: "Red Hat Display", sans-serif;
     /* height: ; */
@@ -233,27 +234,89 @@ body{
 }
 
 
-/*p.options{
-    margin-bottom: 4px;
-    font-family: "Red Hat Display", sans-serif;
-    font-weight: bold;
+form label{
+    position: relative;
 }
 
-.ListBoxes{
+form label span{
     position: absolute;
-    right: 1;
-    margin-left: 400px;
-    margin-top: 50px;
-    height: 200px;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: .2em .5em;
+    background-color: #3D3F92;
+    color: white;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
 }
 
-input[type="text"] {
-    color: #333;
-    border: 1px solid black;
-    border-radius: 1px;
-    padding: 8px;
-    margin-bottom: 10px;
-    font-size: 14px;
-    font-family: "Red Hat Display", sans-serif;
-    width: 600px;
-}*/
+form label span:hover{
+    transform: translateY(-2px);
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); 
+    z-index: 1000;
+    display: none;
+    transition: all .2s ease-in-out;
+}
+
+.help-pop-up{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    margin: auto;
+    width: 50%;
+    height: max-content; 
+    background-color: white;
+    gap: 1em;
+    border-radius: 3px;
+    z-index: 10000;
+    padding: 3em 2em;
+    transition: all .2s ease-in-out;
+}
+
+.help-pop-up:hover{
+    transform: translateY(-2px);
+}
+
+.help-pop-up h1{
+    align-self: flex-start;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.help-pop-up p{
+    font-size: 19px;
+}
+
+.close-button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    cursor: pointer;
+    border-top-right-radius: 2px;
+    padding: .7em 1em;
+    transition: all .2s ease-in-out;
+}
+
+.close-button:hover{
+    background-color: red;
+    color: white;
+}

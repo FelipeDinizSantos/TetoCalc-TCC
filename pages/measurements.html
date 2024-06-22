@@ -10,6 +10,8 @@
     <title>Canaã Imóveis</title>
 </head>
 <body>
+    <span class="overlay"></span>
+
     <!-- Cabecalho -->
     <header class="header">
         <img src="../assets/Img/main_logo_canaa.png" alt="Logo canaã">
@@ -39,32 +41,51 @@
             <div class="property-information">
                 <form action="">
                     <div class="input-container">
-                        <label for="first-input">Área Útil (m²) *</label>
+                        <label for="first-input">
+                            Área Útil (m²) *
+                            <span aria-label="Refere-se à área interna de um imóvel que pode ser efetivamente utilizada. Inclui todos os espaços onde é possível andar, como salas, quartos, banheiros e cozinhas. /split Não inclui áreas comuns (em apartamentos, por exemplo) como corredores, elevadores, escadas, garagens, varandas e áreas de lazer.">
+                                ?
+                            </span>
+                        </label>
                         <input type="intention-1" name="área útil" type="number" min="10" id="first-input">
                     </div>
 
                     <div class="input-container">
-                        <label for="second-input">Área Construída (m²) </label>
+                        <label for="second-input">
+                            Área Construída (m²)
+                            <span aria-label="É a soma de todas as áreas cobertas de um imóvel, incluindo a área útil e outras áreas que são cobertas, mas não necessariamente utilizáveis para morar ou trabalhar. /split Inclui a área útil mais varandas, sacadas, garagens cobertas, depósitos e qualquer outra construção coberta.">
+                                ?
+                            </span>
+                        </label>
                         <input type="intention-2" name="área construída" type="number" min="10" id="second-input">
                     </div>
                     
                     <div class="input-container">
-                        <label for="third-input">Área do Terreno (m²) </label>
+                        <label for="third-input">
+                            Área do Terreno (m²)
+                            <span aria-label="É a totalidade do terreno onde a construção está localizada. Inclui todas as partes do lote ou terreno, tanto as construídas quanto as não construídas. /split Inclui jardins, quintais, áreas de lazer externas, áreas de recuo, etc. Basicamente, toda a extensão do terreno, desde as fronteiras do lote.">
+                                ?
+                            </span> 
+                        </label>
                         <input type="intention-3" name="área do terreno" type="number" min="10" id="third-input">
                     </div>
                     
-
-
                     <div class="button-container">
                         <a href="../index.html" class="back">Voltar</a>
                         <button><a href="../pages/result.html">Avançar</a></button>
-                        
                     </div>
                 </form>
             </div>
         </div>
     </main>
 
+    <div class="help-pop-up">
+        <h1>Definição</h1>
+        <p></p>
+        <h1>Considerações</h1>
+        <p></p>
+        <span class="close-button">X</span>
+    </div>
 
     <!-- Biblioteca de fonte -->
     <script src="https://kit.fontawesome.com/76453bfcde.js" crossorigin="anonymous"></script>

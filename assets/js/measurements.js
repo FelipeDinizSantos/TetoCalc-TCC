@@ -36,3 +36,25 @@ document.querySelector('.property-information button').addEventListener('click',
     
     window.location.href = window.location.origin + path;
 })
+
+document.querySelectorAll('form label span').forEach(element => {
+    element.addEventListener('click', (e)=>{
+        const overlay = document.querySelector('.overlay');
+        const content = e.target.getAttribute('aria-label');
+        const helpPopUp = document.querySelector('.help-pop-up');
+
+        const defination = content.split('/split')[0];
+        const exclusions = content.split('/split')[1];
+
+        document.querySelector('.close-button').addEventListener('click', ()=>{
+            overlay.style.display = 'none';
+            helpPopUp.style.display = 'none';
+        })
+
+        helpPopUp.querySelectorAll('p')[0].innerText=defination;
+        helpPopUp.querySelectorAll('p')[1].innerText=exclusions;
+
+        helpPopUp.style.display = 'flex';
+        overlay.style.display = 'flex';
+    })
+})

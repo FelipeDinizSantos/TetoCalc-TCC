@@ -122,5 +122,5 @@ export async function generatePDF(data){
     doc.text(`${valueProjection}${data.data.targetProperty.negotiation === 'LOCACAO' ? '/mês' : ''}`, 15, startY); 
     startY += 10
 
-    doc.save('estudo_mercadológico.pdf');
+    doc.save('estudo_mercadologico.pdf');
 }
