@@ -12,45 +12,61 @@ async function loadPricingData() {
     try {
         data = await generatePricing(window.location.href);
 
-        let projection;
         let valuePerSquareMeter;
-        let negotiationType;
-        let propertieContainer;
+
+        const studyLevel = document.querySelector('.study-level');
+        studyLevel.innerHTML = data.data.LevelOfPricingAccuracy.nivel;
+
+        switch(data.data.LevelOfPricingAccuracy.nivel){
+            case '1':
+                studyLevel.classList.add('high-level');
+                break;
+            case '2':
+                studyLevel.classList.add('medium-level');
+                break;
+            case '3':
+                studyLevel.classList.add('low-level');
+                break;
+            case '4':
+                studyLevel.classList.add('insufficient-level');
+                break;
+        }
+
+        const negotiationType = document.querySelector('.sales-projection');
+        negotiationType.innerHTML = `Projeção de ${data.data.targetProperty.negotiation === 'LOCACAO' ? 'Locação' : 'Venda'}`;
+
+        const projection = document.querySelector('.value');
+        valuePerSquareMeter = document.querySelector('.valuePerSquareMeter');
+
+        const propertyDetails = document.querySelector('.property-datails');
+        propertyDetails.innerHTML = `${data.data.targetProperty.dormitories} Quartos | ${data.data.targetProperty.bathrooms} Banheiros`;
+        if(data.data.targetProperty.suites) propertyDetails.innerHTML += ` | ${data.data.targetProperty.suites} Suites`;
+        if(data.data.targetProperty.parkingSpaces) propertyDetails.innerHTML += ` | ${data.data.targetProperty.parkingSpaces} Vagas`;
+
+        const propertyLocation = document.querySelector('.property-location');
+        const city = await getCityByNeighborhood(data.data.targetProperty.neighborhoodId);
+        const neighborhood = await getNeighborhoodById(data.data.targetProperty.neighborhoodId);
+        propertyLocation.innerHTML = `${data.data.targetProperty.type.toLocaleLowerCase()} ${data.data.targetProperty.typeStructure.toLocaleLowerCase()} - ${neighborhood.toLocaleLowerCase()}, ${city.toLocaleLowerCase()} - SP`;
+
+        const propertiesUsed = document.querySelector('.properties-used');
+        propertiesUsed.innerHTML = `Imóveis usados para avaliação: <strong>${data.data.propertiesUsedInProjection.length}</strong>`;
+
+        console.log(data.data.propertiesUsedInProjection);
 
         if (data.data.LevelOfPricingAccuracy.nivel === '4') {
-            negotiationType = document.querySelector('.sales-projection');
-            negotiationType.innerHTML = `Projeção de ${data.data.targetProperty.negotiation === 'LOCACAO' ? 'Locação' : 'Venda'}`;
-
-            projection = document.querySelector('.value');
-            valuePerSquareMeter = document.querySelector('.valuePerSquareMeter');
-
             projection.innerHTML = `${formatValueLocation(data.data.valueProjection[Object.keys(data.data.valueProjection)[0]] * data.data.targetProperty.usefulArea)}${data.data.targetProperty.negotiation === 'LOCACAO' ? '/mês' : ''}`;
             valuePerSquareMeter.innerHTML = `Valor por Metro Quadrado <b>${formatValueLocation(data.data.valueProjection[Object.keys(data.data.valueProjection)[0]])}</b>`;
-
-            document.querySelector('.title-simulation').innerHTML='Método Utilizado: ';
-            propertieContainer = document.querySelectorAll('.property-container')[0].querySelector('.simulation-result-1').innerHTML="<h2> Cálculo interno. </h2>";
 
             const savePricingLink = document.querySelector('.save-pricing');
             if (savePricingLink) {
                 savePricingLink.parentElement.removeChild(savePricingLink);
             }
+
         } else {
-            negotiationType = document.querySelector('.sales-projection');
-            negotiationType.innerHTML = `Projeção de ${data.data.targetProperty.negotiation === 'LOCACAO' ? 'Locação' : 'Venda'}`;
-
-            projection = document.querySelector('.value');
-            valuePerSquareMeter = document.querySelector('.valuePerSquareMeter');
-
             projection.innerHTML = `${formatValueLocation(data.data.projectedValueOfTheProperty)}${data.data.targetProperty.negotiation === 'LOCACAO' ? '/mês' : ''}`;
             valuePerSquareMeter.innerHTML = `Valor por Metro Quadrado <b>${formatValueLocation(calculateValuePerSquareMeter(data.data.projectedValueOfTheProperty, data.data.targetProperty.usefulArea))}</b>`;
-
-            propertieContainer = document.querySelectorAll('.property-container');
-            propertieContainer[0].querySelector('.city-estate').innerHTML = await getCityByNeighborhood(data.data.propertiesUsedInProjection[0].neighborhoodId);
-            propertieContainer[0].querySelector('.type-neighborhood').innerHTML = `${data.data.propertiesUsedInProjection[0].type} - ${await getNeighborhoodById(data.data.propertiesUsedInProjection[0].neighborhoodId)}`;
-            propertieContainer[0].querySelector('.property-details').innerHTML = `${data.data.propertiesUsedInProjection[0].usefulArea}m² <span>&#8231;</span> ${data.data.propertiesUsedInProjection[0].dormitories} Quartos <span>&#8231;</span> ${data.data.propertiesUsedInProjection[0].bathrooms} Banheiros <span>&#8231;</span> ${data.data.propertiesUsedInProjection[0].parkingSpaces} Vagas`;
-            propertieContainer[0].querySelector('.simulation-value').innerHTML = `${formatValueLocation(data.data.propertiesUsedInProjection[0].value)}`;
-            propertieContainer[0].querySelector('.icon-value-valuePerSquareMeter').innerHTML = `Valor por Metro Quadrado <b>${formatValueLocation(data.data.propertiesUsedInProjection[0].valuePerSquareMeter)}</b>`;
         }
+
     } catch (error) {
         console.log(error);
     } finally {
