@@ -8,7 +8,13 @@ document.querySelector('.property-information button').addEventListener('click',
     let parkingSpaces = document.getElementById('intention-3');
     let bathrooms = document.getElementById('intention-2');
 
+    if(bedrooms.value === '#') bedrooms.value = '';
+    if(suites.value === '#') suites.value = '';
+    if(parkingSpaces.value === '#') parkingSpaces.value = '';
+    if(bathrooms.value === '#') bathrooms.value = '';
+
     if(parseInt(bedrooms.value) < 0 || parseInt(bedrooms.value) > 50 || bedrooms.value === ''){
+        console.log(bedrooms.name);
         alert(`O campo ${bedrooms.name.toUpperCase()} precisa estar entre 0 e 50`);
         return;
     }
