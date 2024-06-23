@@ -1,6 +1,6 @@
 import { configs } from "./config/config.js";
 
-document.querySelector('.property-information button').addEventListener('click', (e)=>{
+document.querySelector('.submit').addEventListener('click', (e)=>{
     e.preventDefault();
 
     const propertyTypeRole = ['SOBRADO', 'APARTAMENTO', 'CASA TÉRREA', 'CASA PADRÃO'];
@@ -11,6 +11,10 @@ document.querySelector('.property-information button').addEventListener('click',
     let propertyIntention = document.getElementById('intention'); 
     let propertyCategory = document.getElementById('category');
  
+    if(propertyType.value === '#') propertyType.value = '';
+    if(propertyIntention.value === '#') propertyIntention.value = '';
+    if(propertyCategory.value === '#') propertyCategory.value = '';
+
     if(!propertyTypeRole.find((type) => type === propertyType.value.toUpperCase())){
         alert(`O campo ${propertyType.name.toUpperCase()} é obrigatório e precisa ser um dos seguintes: ${propertyTypeRole.join(', ')}`);
         return
