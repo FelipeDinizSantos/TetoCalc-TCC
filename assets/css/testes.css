@@ -1,42 +1,86 @@
-/* Reset básico */
-* {
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    background-color: #f0f0f0;
 }
 
-/* Estilos do contêiner */
-.floating-placeholder {
-    position: relative;
-    margin-bottom: 20px;
+.progress-container {
+    width: 50%;
+    background-color: #e0e0e0;
+    overflow: hidden;
 }
 
-/* Estilos do campo de entrada */
-.floating-placeholder input {
+.progress-bar {
+    width: 0%;
+    height: 5px;
+    background-color: #4CAF50;
+    line-height: 30px;
+    color: white;
+    font-weight: bold;
+    animation: loadProgress 2s ease-in-out forwards;
+}
+
+@keyframes loadProgress {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 200%;
+    }
+}
+
+.progress-bar{
     width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+    height: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    background-color: aqua;
 }
 
-/* Estilos do rótulo */
-.floating-placeholder label {
+.progress-bar .blue-ball, .grey-ball{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.progress-bar .blue-ball{
+    background-color: #497EDA;
+}
+
+.progress-bar .grey-ball{
+    background-color: #D9D9D9;
+    
+}
+
+.progress-bar .line{
+    background-color: #D9D9D9;
     position: absolute;
-    top: 10px;
-    left: 10px;
-    font-size: 16px;
-    color: #aaa;
-    transition: 0.2s;
-    pointer-events: none;
+    z-index: -1;
 }
 
-/* Quando o campo está focado ou não está vazio */
-.floating-placeholder input:focus + label,
-.floating-placeholder input:not(:placeholder-shown) + label {
-    top: -10px;
-    left: 10px;
-    font-size: 12px;
-    color: #333;
+.progress-bar #grey-line{
+    height: 2%;
+    width: 83%;
+}
+
+.progress-bar #blue-line{
+    background-color: #497EDA;
+    padding: 2px 480px 0px 40p;
+}
+
+.text-progress-bar{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 16%;
+    padding-top: 30px;
+    /* background-color: blue; */
+
 }
