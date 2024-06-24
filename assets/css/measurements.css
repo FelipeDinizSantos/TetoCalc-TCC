@@ -11,164 +11,123 @@
 }
 
 body{
-    position: relative;
     width: 100%;
     font-family: "Red Hat Display", sans-serif;
-    /* height: ; */
 }
 
 
 /* Cabeçalho */
 .header{
     width: 100%;
-    height: 20vh;
+    height: 29vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 0px 0px 0px 15vw;
+    gap: 30.5px;
+    padding: 16px 0px 0px 11.3vw;
+    /* background-color: red; */
 }
 
 .header img{
-    width: 20vw;
+    width: 16.5vw;
 }
 
-.header span{
+.header span{   
     display: flex;
     gap: 5px;
 }
 
 .header span a{
+    font-size: 80%;
     text-decoration: none;
-    color: #151515;
+    /* color: #151515; */
 }
 
 .header span p{
+    font-size: 80%;
     font-style: italic;
     color: #aaa;
 }
+
+.header h1{
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: #353535;
+    /* background-color: #151515; */
+}
+
 
 
 /* Conteúdo principal */
 .main-containt{
     width: 100%;
     height: 80vh;
-    padding: 0px 15vw;
+    padding: 0px 11.3vw;
+}
+
+/* .register-property{
+    width: 40vh;
+    height: 100%;
+} */
+
+.retangle{
+    width: 100%;
+    height: 85%;
+    border: 1px solid #eee;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 15px;
-}
-
-.main-containt h1{
-    font-weight: 400;
-    font-size: 2.5rem;
-    color:#353535;
-}
-
-.register-property{
-    width: 40vh;
-    height: 100%;
-}
-
-.register-property p{
-    background-color: #497EDA;
-    position: absolute;
-    top: 25px;
-    right: -14px;
-    padding: 1px 64px 1px 5px;
-    color: #fff;
-    font-weight: 600;
-}
-
-.register-property .p-address{
-    background-color: #497EDA;
-    position: absolute;
-    top: 100px;
-    right: -13px;
-    padding: 1px 42px 1px 5px;
-    color: #fff;
-    font-weight: 600;
-}
-
-.register-property .p-characteristics{
-    background-color: #497EDA;
-    position: absolute;
-    top: 171px;
-    right: -12px;
-    padding: 1px 5px 1px 3px;
-    color: #fff;
-    font-weight: 600;
-}
-
-.register-property .p-measurements{
-    background-color: #497EDA;
-    position: absolute;
-    top: 245px;
-    right: -12px;
-    padding: 1px 52px 1px 3px;
-    color: #fff;
-    font-weight: 600;
-}
-
-.retangle{
-    position: relative;
-    width: 100%;
-    height: 70%;
-    border: 1px solid #eee;
-    display: flex;
-    padding-right: 3vw;
+    /* background-color: red; */
 }
 
 .progress-bar{
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 150%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-around;
     position: relative;
+    /* background-color: aqua; */
+}
+
+.progress-bar .blue-ball, .grey-ball{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
 }
 
 .progress-bar .blue-ball{
-    width: 40px;
-    height: 40px;
     background-color: #497EDA;
-    border-radius: 50%;
 }
 
 .progress-bar .grey-ball{
-    width: 40px;
-    height: 40px;
     background-color: #D9D9D9;
-    border-radius: 50%;
+    
 }
 
 .progress-bar .line{
-    width: 2px;
     background-color: #D9D9D9;
     position: absolute;
     z-index: -1;
 }
 
 .progress-bar #grey-line{
-    height: 73.8%;
-    bottom: 25px;
+    height: 2%;
+    width: 83%;
 }
 
 .progress-bar #blue-line{
     background-color: #497EDA;
-    height: 70%;
-    top: 10%;
-    z-index: 1;
+    padding: 2px 480px 0px 40p;
 }
 
 .property-information{
-    width: 73%;
-    height: 100%;
+    width: 100%;
+    height: 74%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    /* background-color: #151515; */
 }
-
 .property-information form{
     width: 100%;
     height: 80%;

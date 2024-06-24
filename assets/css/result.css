@@ -15,50 +15,51 @@ body{
     font-family: "Red Hat Display", sans-serif;
 }
 
+
+/* Cabeçalho */
 .header{
     width: 100%;
-    height: 20vh;
+    height: 29vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 0px 0px 0px 15vw;
-    margin: 0 !important;
+    gap: 30.5px;
+    padding: 16px 0px 0px 11.3vw;
+    /* background-color: red; */
 }
 
 .header img{
-    width: 20vw;
+    width: 16.5vw;
 }
 
-.header span{
+.header span{   
     display: flex;
     gap: 5px;
 }
 
 .header span a{
+    font-size: 80%;
     text-decoration: none;
-    color: #151515;
+    /* color: #151515; */
 }
 
 .header span p{
+    font-size: 80%;
     font-style: italic;
     color: #aaa;
+}
+
+.header h1{
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: #353535;
+    /* background-color: #151515; */
 }
 
 /* Conteúdo principal */
 .main-containt{
     width: 100%;
     height: 80vh;
-    padding: 0px 15vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 15px;
-}
-
-.main-containt h1{
-    font-weight: 400;
-    font-size: 2.5rem;
-    color:#353535;
+    padding: 0px 11.3vw;
 }
 
 .main-containt .join-text-image{
@@ -67,12 +68,12 @@ body{
     gap: 1%;
 }
 
-.register-property{
+/* .register-property{
     width: 100%;
     height: 100%;
-}
+} */
 
-.register-property .p-property{
+/* .register-property .p-property{
     background-color: #497EDA;
     position: absolute;
     top: 25px;
@@ -120,16 +121,16 @@ body{
     padding: 1px 42px 1px 3px;
     color: #fff;
     font-weight: 600;
-}
+} */
 
 .retangle{
-    position: relative;
     width: 100%;
-    height: max-content;
+    height: 85%;
     border: 1px solid #eee;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
 }
 
 .progress-bar{
@@ -139,6 +140,7 @@ body{
     align-items: center;
     justify-content: space-around;
     position: relative;
+    /* background-color: aqua; */
 }
 
 .progress-bar .blue-ball, .grey-ball{
@@ -183,7 +185,7 @@ body{
 
 }
 
-.text-progress-bar p{
+/* .text-progress-bar p{
     background-color: #497EDA;
     color: #fff;
     font-weight: 600;
@@ -207,7 +209,7 @@ body{
 
 .text-progress-bar .p-result{
     padding: 0px 45px 1px 5px;  
-}
+} */
 
 .property-information{
     position: relative;
