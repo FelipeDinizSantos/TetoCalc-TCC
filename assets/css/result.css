@@ -19,11 +19,11 @@ body{
 /* Cabeçalho */
 .header{
     width: 100%;
-    height: 29vh;
+    height: max-content;
     display: flex;
     flex-direction: column;
-    gap: 30.5px;
-    padding: 16px 0px 0px 11.3vw;
+    gap: 20px;
+    padding: 16px 0 0 11.3vw;
     /* background-color: red; */
 }
 
@@ -34,6 +34,8 @@ body{
 .header span{   
     display: flex;
     gap: 5px;
+    height: max-content;
+    margin-bottom: -1em;
 }
 
 .header span a{
@@ -50,7 +52,7 @@ body{
 
 .header h1{
     font-weight: 400;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #353535;
     /* background-color: #151515; */
 }
@@ -58,7 +60,6 @@ body{
 /* Conteúdo principal */
 .main-containt{
     width: 100%;
-    height: 80vh;
     padding: 0px 11.3vw;
 }
 
@@ -124,6 +125,7 @@ body{
 } */
 
 .retangle{
+    position: relative;
     width: 100%;
     height: 85%;
     border: 1px solid #eee;
@@ -135,7 +137,8 @@ body{
 
 .progress-bar{
     width: 100%;
-    height: 150%;
+    height: max-content;
+    padding-top: 2em;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -213,9 +216,9 @@ body{
 
 .property-information{
     position: relative;
-    padding: 1.5em 5em 0 5em;
+    padding: 2.5em 5em 0 5em;
     width: 100%;
-    height: 100%;
+    height: 20em;
     display: flex;
     flex-direction: column;
 }
@@ -223,6 +226,10 @@ body{
 .property-information .icon-information{
     width: 3%;
     height: 1%;
+}
+
+.property-information a{
+    width: 36em;
 }
 
 .sales-projection{
@@ -244,8 +251,8 @@ body{
 
 .first-informations{
     width: 70%;
-    height: 37%;
-    margin-bottom: 8em;
+    height: max-content;
+    margin-bottom: .5em;
 }
 
 .first-informations p{
@@ -265,12 +272,12 @@ body{
 
 .see-informations{
     display: flex;
-    margin-top: -6em;
     flex-direction: column;
     justify-content: center;
     width: 70%;
+    height: 2em;
+    text-decoration: underline;
     cursor: pointer !important;
-    z-index: 10000000000;
 }
 
 .see-informations a{
@@ -280,13 +287,11 @@ body{
 
 .button-container{
     width: 100%;
-    height: 10vh;
-    margin-top: 3em;
-    margin-bottom: 2em;
+    height: 4em;
     display: flex;
     justify-content: center;
     align-items: center;  
-    z-index: 10000000000;
+    z-index: 1000000;
     gap: 8%;  
 }
 
@@ -323,7 +328,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 1.5em;
-    z-index: 3;
+    z-index: 10000000 !important;
     font-size: 2em;
 }
 
@@ -349,7 +354,7 @@ body{
     position: absolute;
     top: 0;
     right: 0;
-    margin: 1em 4em;
+    margin: 2em 4em;
     font-size: 24px;
     padding: .5em .8em;
     color: white !important;

@@ -32,6 +32,6 @@ export async function generatePricing(url) {
                 errorMessage = `Erro: ${response.status}. Por favor, tente novamente.`;
         }
         
-        window.location.href= window.origin + `/pages/errors.html?errorMessage=${errorMessage}`;
+        window.location.href= window.origin + `${configs.domain_suffix}/pages/errors.html?errorMessage=${errorMessage}`;
     }
 }
