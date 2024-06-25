@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Css -->
+    <link rel="stylesheet" href="../assets/css/result.css">
+    <!-- Link para o mobile -->
+    <link rel="stylesheet" href="../assets/css/mobile/result.mobile.css" media="screen and (max-width: 500px)">
+    <title>Canaã Imóveis</title>
+</head>
+<body>
+    <!-- Cabecalho -->
+    <header class="header">
+        <img src="../assets/Img/main_logo_canaa.png" alt="Logo canaã">
+        <span><a href="https://www.grupocanaa.com.br/">Home</a>><p>TetoCalc</p></span>
+    </header>
+    
+    <!-- Conteúdo Principal -->
+    <main class="main-containt">
+        <h1>Descubra Quanto Vale o Seu Imóvel:</h1>
+        <div class="retangle">
+            <div class="loading-screen">
+                <div class="loader"></div>
+                <p>Montando seu estudo ...</p>
+            </div>
+            <div class="register-property">
+                <div class="progress-bar">
+                    <p class="p-property">Imóvel</p>
+                    <p class="p-address">Endereço</p>
+                    <p class="p-characteristics">Características</p>
+                    <p class="p-measurements">Medidas</p>
+                    <p class="p-result">Resultado</p>
+                    <a href="../index.html"><div class="blue-ball"></div></a>
+                    <a href="../pages/address.html"><div class="blue-ball"></div></a>
+                    <a href="../pages/characteristics.html"><div class="blue-ball"></div></a>
+                    <a href="../pages/measurements.html"><div class="blue-ball"></div></a>
+                    <a href="../pages/result.html"><div class="blue-ball"></div></a>
+                    <div class="line" id="blue-line"></div>
+                    <div class="line" id="grey-line"></div>
+                </div>
+            </div>
+           
+            <div class="property-information"> <!-- estamos com um problema no css em property information. ta bugando o display flex -->
+                <div class="container-informations">
+
+                    <div class="first-informations">
+                        <p class="sales-projection"></p>
+                        <div class="container-join-value">
+                            <p class="value"></p>
+                            <div class="join-text-image">
+                                <img src="../assets/Img/information.png" alt="ícone de informação" class="icon-information"><p class="icon-value valuePerSquareMeter"></p>
+                            </div>
+                        </div>
+                        <p class="title-simulation">Um dos imóveis utilizados:</p>
+                    </div>
+                    <div class="second-informations property-container">
+                        <div class="simulation-result-1">
+                            <p class="city-estate"></p>
+                            <p class="type-neighborhood"></p>
+                            <p class="property-details"></p>
+                            <p class="simulation-value"></p>
+                            <div class="join-text-image">
+                                <img src="../assets/Img/information.png" alt="ícone de informação" class="icon-information"> <p class="icon-value-valuePerSquareMeter">Valor por Metro Quadrado <b>R$ 3.200</b></p>
+                            </div>
+                        </div>
+                    <img src="../assets/Img/right-arrow.png" id="more-properties">
+                </div>
+                <div class="see-informations">
+                    <span><img src="../assets/Img/pin-de-localizacao.png" alt="ícone de localização" class="icon-local"><a href="./workingOn.html">Visualizar Informações de Precificação do Bairro e Região</a></span>
+                </div>
+            </div>
+                <div class="button-container">
+                    <a href="../index.html">Refazer</a>
+                    <button><a href="#" class="save-pricing">Ver Imóveis</a></button>
+                    <button class="generate-pdf"><a href="#">Gerar PDF</a></button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Biblioteca de fonte -->
+    <script src="https://kit.fontawesome.com/76453bfcde.js" crossorigin="anonymous"></script>
+</body>
+<script type="module" src="../assets/js/result.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs" crossorigin="anonymous"></script>
+</html>
+
+
