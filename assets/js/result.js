@@ -91,9 +91,18 @@ function animateLoadingText() {
     textElement.innerHTML = text.split('').map((char) => `<span>${char}</span>`).join('');
 }
 
+function showMoreInformationsPage(){
+    const currentUrl = new URL(window.location.href);
+    const params = new URLSearchParams(currentUrl.search);
+
+    let path = `${configs.domain_suffix}pages/moreInformations.html?${params.toString()}`;
+    window.location.href = window.location.origin + path
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     loadPricingData();
     animateLoadingText();
     document.querySelector('.generate-pdf').addEventListener('click', async () => await generatePDF(data));
     document.querySelector('.save-pricing').addEventListener('click', handleSavePricingClick);
+    document.querySelector('.see-informations').addEventListener('click', showMoreInformationsPage)
 });
