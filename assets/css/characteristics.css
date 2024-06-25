@@ -178,7 +178,7 @@ body{
     padding: 1em;
     gap: 20px;
     justify-content: center;
-    background-color: red;
+    /* background-color: red; */
 
 }
 
@@ -189,7 +189,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 15px;
-    background-color: black;
+    /* background-color: black; */
 }
 
 .property-information form .text-select{
