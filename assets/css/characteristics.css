@@ -175,6 +175,7 @@ body{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    padding: 1em;
     gap: 20px;
 }
 
@@ -189,7 +190,7 @@ body{
 
 .property-information form label{
     font-weight: bold;
-    color:#D9D9D9;
+    color:#484747;
 }
 
 .property-information form input{

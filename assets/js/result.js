@@ -48,14 +48,12 @@ async function loadPricingData() {
         const neighborhood = await getNeighborhoodById(data.data.targetProperty.neighborhoodId);
         propertyLocation.innerHTML = `${data.data.targetProperty.type.toLocaleLowerCase()} ${data.data.targetProperty.typeStructure.toLocaleLowerCase()} - ${neighborhood.toLocaleLowerCase()}, ${city.toLocaleLowerCase()} - SP`;
 
-        const propertiesUsed = document.querySelector('.properties-used');
-        propertiesUsed.innerHTML = `Imóveis usados para avaliação: <strong>${data.data.propertiesUsedInProjection.length}</strong>`;
-
-        console.log(data.data.propertiesUsedInProjection);
-
         if (data.data.LevelOfPricingAccuracy.nivel === '4') {
             projection.innerHTML = `${formatValueLocation(data.data.valueProjection[Object.keys(data.data.valueProjection)[0]] * data.data.targetProperty.usefulArea)}${data.data.targetProperty.negotiation === 'LOCACAO' ? '/mês' : ''}`;
             valuePerSquareMeter.innerHTML = `Valor por Metro Quadrado <b>${formatValueLocation(data.data.valueProjection[Object.keys(data.data.valueProjection)[0]])}</b>`;
+
+            const propertiesUsed = document.querySelector('.properties-used');
+            propertiesUsed.innerHTML = `Imóveis usados para avaliação: <strong>0</strong><br />Calculo interno utilizado.`;
 
             const savePricingLink = document.querySelector('.save-pricing');
             if (savePricingLink) {
@@ -63,6 +61,9 @@ async function loadPricingData() {
             }
 
         } else {
+            const propertiesUsed = document.querySelector('.properties-used');
+            propertiesUsed.innerHTML = `Imóveis usados para avaliação: <strong>${data.data.propertiesUsedInProjection.length}</strong>`;
+
             projection.innerHTML = `${formatValueLocation(data.data.projectedValueOfTheProperty)}${data.data.targetProperty.negotiation === 'LOCACAO' ? '/mês' : ''}`;
             valuePerSquareMeter.innerHTML = `Valor por Metro Quadrado <b>${formatValueLocation(calculateValuePerSquareMeter(data.data.projectedValueOfTheProperty, data.data.targetProperty.usefulArea))}</b>`;
         }
