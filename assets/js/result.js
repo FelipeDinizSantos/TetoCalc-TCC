@@ -39,7 +39,7 @@ async function loadPricingData() {
         valuePerSquareMeter = document.querySelector('.valuePerSquareMeter');
 
         const propertyDetails = document.querySelector('.property-datails');
-        propertyDetails.innerHTML = `${data.data.targetProperty.dormitories} Quartos | ${data.data.targetProperty.bathrooms} Banheiros`;
+        propertyDetails.innerHTML = `${data.data.targetProperty.usefulArea}m² | ${data.data.targetProperty.dormitories} Quartos | ${data.data.targetProperty.bathrooms} Banheiros`;
         if(data.data.targetProperty.suites) propertyDetails.innerHTML += ` | ${data.data.targetProperty.suites} Suites`;
         if(data.data.targetProperty.parkingSpaces) propertyDetails.innerHTML += ` | ${data.data.targetProperty.parkingSpaces} Vagas`;
 
