@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Link Css -->
+   <link rel="stylesheet" href="../assets/css/result.css">
+   <link rel="stylesheet" href="../assets/css/moreInformations.css">
+   <!-- Link para o mobile -->
+   <link rel="stylesheet" href="../assets/css/mobile/result.mobile.css" media="screen and (max-width: 500px)">
+    <title>Canaã Imóveis</title>
+</head>
+<body>
+    <!-- Cabecalho -->
+    <header class="header">
+        <img src="../assets/Img/main_logo_canaa.png" alt="Logo canaã">
+        <span><a href="./pages/teste.html">Home</a><p>> TetoCalc</p></span>
+        <h1>Descubra Mais Sobre o Bairro</h1>
+    </header>
+    
+    <!-- Conteúdo Principal -->
+    <main class="main-containt">
+        <div class="retangle">
+
+            <div class="loading-screen">
+                <div class="loader"></div>
+                <p>Buscando localização ...</p>
+            </div>
+
+            <div class="container">
+                <h1>Cidade:</h1>
+                <h2 class="cityName"></h2>
+                <h1>Bairro:</h1>
+                <h2 class="neighborhoodName"></h2>
+                <p class="neighborhoodDescription"></p> 
+            </div>
+
+            <button class="back">Voltar</button>  
+        </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/76453bfcde.js" crossorigin="anonymous"></script>
+</body>
+    <script src="../assets/js/moreInformations.js" type="module"></script>
+    <script src="../assets/js/utils/backHistory.js"></script>
+</html>
