@@ -4,38 +4,32 @@
 
 /* Reset das estilizações padrões */
 *{
-    margin: 0px;
-    padding: 0px;
+    padding: 0px !important;
     box-sizing: border-box;
     border: 0px;
 }
 
+header{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
 body{
-    width: 100%;
+    overflow-x: hidden;
     font-family: "Red Hat Display", sans-serif;
 }
 
-
-/* Cabeçalho */
-.header{
-    padding: 5px 10px;
-    /* background-color: rgb(255, 0, 0); */
+header h1{
+    text-align: center;
 }
 
 .header img{
-    width: 100vw;
-   
+    margin: 0 auto;
+    width: 20em;
 }
 
 .header span{
     display: none;
-}
-
-
-/* Conteúdo principal */
-.main-containt{
-    padding: 5px 10px;
-    justify-content: start;
 }
 
 .main-containt h1{
@@ -47,25 +41,26 @@ body{
     height: 30%;
 }
 
+.retangle{
+    margin: 0 auto 2em auto!important;
+    padding: 2em 2em 4em 2em!important;
+    height: 100;
+    gap: 2em;
+}
+
 .register-property{
     /* background-color: red; */
     height: 100%;
-    width: 26%;
-    
+    width: 100%;
 }
 
 .property-information{
     /* background-color: lime; */
-    width: 82%;
+    width: 100%;
 }
 
 .progress-bar .p-address, .p-characteristics, .p-measurements, .p-property, .p-result{    
     display: none;
-}
-
-.retangle{
-    height: 100%;
-
 }
 
 .container-informations{
@@ -90,22 +85,52 @@ body{
 }
 
 .see-informations
-
 {
     /* background-color: red; */
     width: 90%;
     font-size: 90%;
 }
 
+.study-level{
+    position: relative;
+    text-align: center;
+    margin: 0 auto .5em auto !important;
+    padding: .2em .5em !important;
+    width: min-content;
+}
+
 .button-container{
-    align-items: start;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    margin-top: 2em !important;
+    align-items: center;
+}
+
+.button-container button a, .button-container a{
+    text-align: center;
 }
 
 .button-container button a{
-    padding: 9px 12px;
-
+    display: flex;
+    padding: 0 !important;
+    width: 28.5em;
+    height: 3.2em;
+    justify-content: center;
+    align-items: center;
 }
 
 .button-container a{
-    padding: 6px 15px;
+    padding: .7em 10.1em !important;
+}
+
+.loading-screen{
+    height: 100% !important;
+    margin-left: -.6em !important;
+}
+
+.loader{
+    width: 90px;
+    padding: 2px !important;
+    display: flex;
 }

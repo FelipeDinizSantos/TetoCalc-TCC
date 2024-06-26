@@ -11,8 +11,8 @@
 }
 
 body{
-    width: 100%;
     font-family: "Red Hat Display", sans-serif;
+    overflow-x: hidden;
 }
 
 
@@ -128,6 +128,7 @@ body{
     position: relative;
     width: 100%;
     height: 85%;
+    margin-bottom: 2em;
     border: 1px solid #eee;
     display: flex;
     flex-direction: column;
@@ -294,6 +295,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;  
+    margin-top: -.5em !important;
     z-index: 1000000;
     gap: 8%;  
 }
@@ -321,7 +323,7 @@ body{
     font-weight: 500;
     border: 1px solid#cacaca;
     background-color: #fff;
-    padding: 6px 40px;
+    padding: 8px 40px;
     border-radius: 3.5px;
 }
 
