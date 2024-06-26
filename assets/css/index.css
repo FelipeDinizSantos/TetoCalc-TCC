@@ -112,13 +112,16 @@ body{
 }
 
 .progress-bar #grey-line{
-    height: 2%;
-    width: 83%;
+    height: 4%;
+    width: 70%;
+    right: 10%;
 }
 
 .progress-bar #blue-line{
     background-color: #497EDA;
-    padding: 2px 480px 0px 40p;
+    width: 80%;
+    height: 4%;
+    /* z-index: -0; */
 }
 
 .text-progress-bar{

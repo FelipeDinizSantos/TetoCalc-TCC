@@ -113,13 +113,16 @@ body{
 }
 
 .progress-bar #grey-line{
-    height: 2%;
-    width: 83%;
+    height: 4.5%;
+    width: 50%;
+    right: 10%;
 }
 
 .progress-bar #blue-line{
     background-color: #497EDA;
-    padding: 2px 480px 0px 40p;
+    width: 80%;
+    height: 4.5%;
+    /* z-index: -0; */
 }
 
 /* .text-progress-bar{
@@ -247,10 +250,13 @@ body{
     font-family: "Red Hat Display", sans-serif;
     text-decoration: none;
     font-weight: 500;
-    border: 1px solid#b8b8b8;
+    border: 1px solid#cacaca;
     background-color: #fff;
     padding: 13px 150px;
     border-radius: 5px;
 }
 
+.button-container .back{
+    color: #868080;
+}
 
