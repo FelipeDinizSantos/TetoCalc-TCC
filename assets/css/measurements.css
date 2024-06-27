@@ -129,6 +129,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 2em;
     /* background-color: #151515; */
 }
 .property-information form{
@@ -275,6 +276,8 @@ form label span:hover{
 
 .help-pop-up p{
     font-size: 19px;
+    align-self: flex-start;
+    flex-wrap: wrap;
 }
 
 .close-button{
