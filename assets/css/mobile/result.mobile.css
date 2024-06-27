@@ -21,11 +21,12 @@ body{
 
 header h1{
     text-align: center;
+    z-index: 10000000000000000000000000 !important;
 }
 
 .header img{
+    width: 10rem;
     margin: 0 auto;
-    width: 20em;
 }
 
 .header span{

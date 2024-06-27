@@ -14,9 +14,9 @@
     font-weight: 500;
     border: 1px solid #353535;
     background-color: #fff;
-    padding: 6px 40px;
     border-radius: 5px;
     width: 80%;
+    height: 2.5em;
     margin: 1em auto;
     cursor: pointer;
 }
