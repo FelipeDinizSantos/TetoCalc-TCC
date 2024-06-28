@@ -56,7 +56,7 @@ body{
 .button-container{
     width: 100%;
     height: 7rem;
-    gap: 0.5rem;
+    gap: 0.1rem;
     flex-direction: column-reverse;
     align-items: center;
     /* background-color: black; */

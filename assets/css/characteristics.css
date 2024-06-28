@@ -102,6 +102,7 @@ body{
 
 .retangle{
     width: 100%;
+    padding: 35px 0 0 0;  
     height: max-content;
     border: 1px solid #eee;
     display: flex;
@@ -143,7 +144,7 @@ body{
 }
 
 .progress-bar #grey-line{
-    height: 4.5%;
+    height: 7.5%;
     width: 30%;
     right: 10%;
 }
@@ -151,7 +152,7 @@ body{
 .progress-bar #blue-line{
     background-color: #497EDA;
     width: 80%;
-    height: 4.5%;
+    height: 7.5%;
     /* z-index: -0; */
 }
 
