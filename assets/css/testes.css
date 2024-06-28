@@ -1,35 +1,83 @@
-body {
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25+Charted&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Reset das estilizações padrões */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: 0px;
+}
+
+body{
+    width: 100%;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+
+/* Cabeçalho */
+.header{
+    width: 100%;
+    height: 29vh;
     display: flex;
+    flex-direction: column;
+    gap: 30.5px;
+    padding: 16px 0px 0px 11.3vw;
+    /* background-color: red; */
+}
+
+.header img{
+    width: 16.5vw;
+}
+
+.header span{   
+    display: flex;
+    gap: 5px;
+}
+
+.header span a{
+    font-size: 80%;
+    text-decoration: none;
+    /* color: #151515; */
+}
+
+.header span p{
+    font-size: 80%;
+    font-style: italic;
+    color: #aaa;
+}
+
+.header h1{
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: #484747;
+    /* background-color: #151515; */
+}
+
+/* Conteúdo principal */
+.main-containt{
+    width: 100%;
+    height: 80vh;
+    padding: 0px 11.3vw;
+}
+
+
+/* .register-property{
+    width: 40vh;
+    height: 100%;
+    background-color: #CCC;
+    display: flex;
+} */
+
+.retangle{
+    width: 100%;
+    height: 85%;
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-}
-
-.progress-container {
-    width: 50%;
-    background-color: #e0e0e0;
-    overflow: hidden;
-}
-
-.progress-bar {
-    width: 0%;
-    height: 5px;
-    background-color: #4CAF50;
-    line-height: 30px;
-    color: white;
-    font-weight: bold;
-    animation: loadProgress 2s ease-in-out forwards;
-}
-
-@keyframes loadProgress {
-    from {
-        width: 0%;
-    }
-    to {
-        width: 200%;
-    }
+    /* background-color: red; */
 }
 
 .progress-bar{
@@ -39,7 +87,7 @@ body {
     align-items: center;
     justify-content: space-around;
     position: relative;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .progress-bar .blue-ball, .grey-ball{
@@ -64,13 +112,16 @@ body {
 }
 
 .progress-bar #grey-line{
-    height: 2%;
-    width: 83%;
+    height: 4%;
+    width: 70%;
+    right: 10%;
 }
 
 .progress-bar #blue-line{
     background-color: #497EDA;
-    padding: 2px 480px 0px 40p;
+    width: 80%;
+    height: 4%;
+    /* z-index: -0; */
 }
 
 .text-progress-bar{
@@ -84,3 +135,106 @@ body {
     /* background-color: blue; */
 
 }
+
+.text-progress-bar p{
+    background-color: #497EDA;
+    color: #fff;
+    font-weight: 600;
+}
+
+.text-progress-bar .p-property{
+    padding: 0px 70px 1px 5px;
+}
+
+.text-progress-bar .p-address{
+    padding: 0px 48px 1px 5px;
+}
+
+.text-progress-bar .p-characteristics{
+    padding: 0px 10px 1px 5px;
+}
+
+.text-progress-bar .p-measurements{
+    padding: 0px 57px 1px 5px;
+}
+
+.text-progress-bar .p-result{
+    padding: 0px 45px 1px 5px;  
+}
+
+.sumir{
+    opacity: 0;
+}
+
+.property-information{
+    width: 100%;
+    height: 74%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #151515; */
+}
+
+.property-information form{
+    width: 70%;
+    height: 71%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    /* background-color: red; */
+}
+
+.property-information form .property-type, .intention, .category{
+    font-family: "Red Hat Display", sans-serif;
+    width: 100%;
+    height: 10vh;
+    outline: 0px;
+    border: 1px solid #cacaca;
+    padding: 0px 10px;
+    border-radius: 5px;
+    color:#353535;
+    box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.property-information div{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.property-information form label{
+    font-weight: bold;
+    color:#484747;
+}
+
+.retangle button{
+    background-color: transparent;
+}
+
+.retangle button a{
+    font-family: "Red Hat Display", sans-serif;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 430;
+    font-size: 20px;
+    background-color: #3D3F92;
+    padding: 13px 374px 13px;
+    border-radius: 3px;
+    transition: background-color 0s ease;
+}
+
+.retangle button a:hover{
+    background-color: #497EDA;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* background-color: #353535; */
+}
+
+

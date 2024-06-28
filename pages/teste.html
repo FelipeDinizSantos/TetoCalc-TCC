@@ -1,26 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/testes.css">
-    <title>Animated Progress Bar</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Link Css -->
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <!-- Link para o mobile -->
+    <link rel="stylesheet" href="./assets/css/mobile/index-mobile.css" media="screen and (max-width: 1000px)">
+    <title>Canaã Imóveis</title>
 </head>
 <body>
-    <div class="progress-container">
-        <div class="progress-bar">
-            <a href="./index.html"><div class="blue-ball"></div></a>
-            <div class="grey-ball"></div>
-            <div class="grey-ball"></div>
-            <div class="grey-ball"></div>
-            <div class="grey-ball"></div>
-            <div class="line" id="blue-line"></div>
-            <div class="line" id="grey-line"></div>
-        </div>
-        <div class="progress-bar" id="progress-bar"></div>
-    </div>
+    <!-- Cabecalho -->
+    <header class="header">
+        <a href="../index.html" class="back">
+            <img src="./assets/Img/main_logo_canaa.png" alt="Logo canaã">
+        </a>
+        <span><a href="https://www.grupocanaa.com.br/">Home</a><p>> TetoCalc</p></span>
+        <h1>Descubra quanto vale o seu Imóvel</h1>
+    </header>
     
-    </div>
+    <!-- Conteúdo Principal -->
+    <main class="main-containt">
+        <div class="retangle">
+            <div class="register-property">
+                <div class="progress-bar">
+                    <a href="./index.html"><div class="blue-ball"></div></a>
+                    <div class="grey-ball"></div>
+                    <div class="grey-ball"></div>
+                    <div class="grey-ball"></div>
+                    <div class="grey-ball"></div>
+                    <div class="line" id="blue-line"></div>
+                    <div class="line" id="grey-line"></div>
+                </div>
+                        <!-- <div class="text-progress-bar">
+                            <p class="p-property">Imóvel</p>
+                            <p class="p-address sumir">Endereço</p>
+                            <p class="p-characteristics sumir">Características</p>
+                            <p class="p-measurements sumir">Medidas</p>
+                            <p class="p-result sumir">Resultado</p>  
+                        </div> -->
+            </div>
+            <div class="property-information">
+                <form action="">
+                    <div>
+                        <label for="first-input">Tipo do Imóvel *</label>
+                        <!-- <input list="property-type" name="Tipo do Imóvel" id="first-input" required> -->
+                        <select id="property-type" name="Tipo do Imóvel" class="property-type">
+                            <option value=""></option>
+                            <option value="SOBRADO">Sobrado</option>
+                            <option value="APARTAMENTO">Apartamento</option>
+                            <option value="CASA TÉRREA">Casa Térrea</option>
+                            <option value="CASA PADRÃO">Casa Padrão</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="second-input">Pretensão *</label>
+                        <!-- <input list="intention" name="Pretenção" id="second-input" required> -->
+                        
+                        <select name="Pretensão" id="intention" class="intention">
+                            <option value=""></option>
+                            <option value="LOCAÇÃO">Locação</option>
+                            <option value="VENDA">Venda</option>
+                        </select>
+                    </div>
+
+                    
+                    <div>
+                        <label for="third-input">Categoria *</label>
+                        <!-- <input list="category" name="Categoria" id="third-input" required> -->
+                        
+                        <select name="Categoria" id="category" class="category">
+                            <option value=""></option>
+                            <option value="RESIDENCIAL">Residencial</option>
+                            <option value="COMERCIAL">Comercial</option>
+                        </select>
+                    </div>
+
+                </form>
+            </div>
+            <div class="button-container">
+                <button class="submit"><a href="./pages/address.html">Iniciar</a></button>
+            </div>
+            
+        </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/76453bfcde.js" crossorigin="anonymous"></script>
 </body>
+    <script src="./assets/js/index.js" type="module"></script>
 </html>

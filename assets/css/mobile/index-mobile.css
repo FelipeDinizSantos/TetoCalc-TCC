@@ -43,14 +43,24 @@ body{
 }
 
 .property-information{
+    height: 60%;
     /* background-color: #3D3F92; */
-    /* align-items: start; */
 }
 
-.property-information .input-container{
-    width: 85%;
-    height: 10vh;
-    /* background-color: aquamarine; */
+.register-property{
+    width: 100%;
+    height: 30%;
+}
+
+.progress-bar #grey-line{
+    height: 0.13rem;
+    
+}
+
+.progress-bar #blue-line{
+    
+    height: 0.13rem;
+    
 }
 
 .button-container{

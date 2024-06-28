@@ -169,7 +169,7 @@ body{
 }
 
 .progress-bar #grey-line{
-    height: 4.5%;
+    height: 0.1rem;
     width: 00%;
     right: 10%;
 }
@@ -177,7 +177,7 @@ body{
 .progress-bar #blue-line{
     background-color: #497EDA;
     width: 80%;
-    height: 4.5%;
+    height: 0.1rem;
     /* z-index: -0; */
 }
 
